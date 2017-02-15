@@ -1,0 +1,64 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="J_Ledger:war exploded">
+    <output-path>$PROJECT_DIR$/target/J_Ledger-1.0-SNAPSHOT</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="J_Ledger" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: org.primefaces.themes:all-themes:1.0.10" />
+          <element id="library" level="project" name="Maven: org.eclipse.persistence:eclipselink:2.5.2" />
+          <element id="library" level="project" name="Maven: org.eclipse.persistence:javax.persistence:2.1.0" />
+          <element id="library" level="project" name="Maven: org.eclipse.persistence:commonj.sdo:2.1.1" />
+          <element id="library" level="project" name="Maven: org.apache.openjpa:openjpa:2.4.0" />
+          <element id="library" level="project" name="Maven: commons-lang:commons-lang:2.4" />
+          <element id="library" level="project" name="Maven: commons-collections:commons-collections:3.2.1" />
+          <element id="library" level="project" name="Maven: net.sourceforge.serp:serp:1.15.1" />
+          <element id="library" level="project" name="Maven: junit:junit:3.8.1" />
+          <element id="library" level="project" name="Maven: org.apache.geronimo.specs:geronimo-jms_1.1_spec:1.1.1" />
+          <element id="library" level="project" name="Maven: org.apache.geronimo.specs:geronimo-jta_1.1_spec:1.1.1" />
+          <element id="library" level="project" name="Maven: commons-pool:commons-pool:1.5.4" />
+          <element id="library" level="project" name="Maven: org.apache.xbean:xbean-asm5-shaded:3.17" />
+          <element id="library" level="project" name="Maven: javax.xml.stream:stax-api:1.0-2" />
+          <element id="library" level="project" name="Maven: org.apache.geronimo.specs:geronimo-jpa_2.0_spec:1.1" />
+          <element id="library" level="project" name="Maven: org.apache.openjpa:openjpa-jest:2.4.0" />
+          <element id="library" level="project" name="Maven: org.apache.openjpa:openjpa-kernel:2.4.0" />
+          <element id="library" level="project" name="Maven: org.apache.openjpa:openjpa-lib:2.4.0" />
+          <element id="library" level="project" name="Maven: org.apache.openjpa:openjpa-persistence:2.4.0" />
+          <element id="library" level="project" name="Maven: org.apache.openjpa:openjpa-persistence-jdbc:2.4.0" />
+          <element id="library" level="project" name="Maven: org.apache.openjpa:openjpa-jdbc:2.4.0" />
+          <element id="library" level="project" name="Maven: org.apache.poi:poi:3.13" />
+          <element id="library" level="project" name="Maven: commons-codec:commons-codec:1.9" />
+          <element id="library" level="project" name="Maven: org.apache.poi:poi-excelant:3.13" />
+          <element id="library" level="project" name="Maven: org.apache.poi:poi-ooxml:3.13" />
+          <element id="library" level="project" name="Maven: org.apache.poi:poi-ooxml-schemas:3.13" />
+          <element id="library" level="project" name="Maven: org.apache.xmlbeans:xmlbeans:2.6.0" />
+          <element id="library" level="project" name="Maven: stax:stax-api:1.0.1" />
+          <element id="library" level="project" name="Maven: org.apache.ant:ant:1.8.2" />
+          <element id="library" level="project" name="Maven: org.apache.ant:ant-launcher:1.8.2" />
+          <element id="library" level="project" name="Maven: org.primefaces:primefaces:5.3" />
+          <element id="library" level="project" name="Maven: org.primefaces.extensions:primefaces-extensions:4.0.0" />
+          <element id="library" level="project" name="Maven: com.google.code.gson:gson:2.2.4" />
+          <element id="library" level="project" name="Maven: org.apache.commons:commons-lang3:3.1" />
+          <element id="library" level="project" name="Maven: com.twelvemonkeys.common:common-lang:3.2.1" />
+          <element id="library" level="project" name="Maven: org.grlea.log:simple-log:1.7" />
+          <element id="library" level="project" name="Maven: org.slf4j:slf4j-site:1.7.12" />
+          <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.12" />
+          <element id="library" level="project" name="Maven: commons-beanutils:commons-beanutils:20030211.134440" />
+          <element id="library" level="project" name="Maven: com.netflix.rxjava:rxjava-core:0.20.7" />
+          <element id="library" level="project" name="Maven: javax:javaee-api:7.0" />
+          <element id="library" level="project" name="Maven: com.sun.mail:javax.mail:1.5.0" />
+          <element id="library" level="project" name="Maven: javax.activation:activation:1.1" />
+          <element id="library" level="project" name="Maven: javax:javaee-web-api:7.0" />
+          <element id="library" level="project" name="Maven: com.sun.faces:jsf-api:2.0.2" />
+          <element id="library" level="project" name="Maven: com.sun.faces:jsf-impl:2.0.2" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/target/J_Ledger-1.0-SNAPSHOT/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="J_Ledger/web/Web" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,33 @@
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation="
+                     http://java.sun.com/xml/ns/persistence/orm
+                     http://java.sun.com/xml/ns/persistence/orm_1_0.xsd"
+                 version="1.0">
+<entity class="coreobjects.sobStruct">
+    <sql-result-set-mapping name="AccStructMapping">
+    <entity-result entity-class="coreobjects.sobStruct">
+        <field-result name="sob.name"  column="ledgerName"/>
+        <field-result name="sob.ledger_id" column="ledgerId"/>
+        <field-result name="sob.chart_of_accounts_id" column="coaId"/>
+        <field-result name="fifst.id_flex_structure_name" column="structName"/>
+        <field-result name="ifs.segment_name" column="segmentName"/> 
+        <field-result name="ifs.segment_num" column="segmentNum"/>
+        <field-result name="ifs.display_size" column="displaySize"/>
+        <field-result name="ifs.default_type" column="defaultType"/>
+        <field-result name="ifs.default_value" column="defaultValue"/> 
+        <field-result name="ifs.form_left_prompt" column="formLeftPrompt"/>
+	<field-result name="ifs.application_column_name" column="columnName"/>
+	<field-result name="sav1.attribute_value" column="balancing"/>
+	<field-result name="sav2.attribute_value" column="costCenter"/>
+	<field-result name="sav4.attribute_value" column="intercompany"/>
+	<field-result name="sav3.attribute_value" column="naturalAccount"/>
+	<field-result name="sav5.attribute_value" column="secondaryTracking"/>
+	<field-result name="sav6.attribute_value" column="global"/>
+	<field-result name="ffvs.flex_value_set_name" column="flexValueSetName"/>
+        <field-result name="ffvs.flex_value_set_id" column="flexValueSetId"/>		
+    </entity-result>
+</sql-result-set-mapping>
+</entity>
+</entity-mappings>
+

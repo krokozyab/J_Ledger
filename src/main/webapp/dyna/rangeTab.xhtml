@@ -1,0 +1,540 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+        <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:pe="http://primefaces.org/ui/extensions"
+      xmlns:c="http://java.sun.com/jsp/jstl/core">
+<h:head>
+    <title>Facelet Title</title>
+
+
+</h:head>
+
+<h:body >
+    <!--  <f:metadata>
+          <f:viewAction action="#{rBean.populateAcStruct}"/>
+      </f:metadata> -->
+    <ui:composition template="../WEB-INF/layout/template.xhtml"  >
+
+        <ui:define name="head">
+            <style type="text/css">
+                .ui-panelgrid-content > * {
+                    box-sizing: border-box;
+                    -webkit-box-sizing: border-box;
+                    -moz-box-sizing: border-box;
+                }
+                .ui-datatable-hor-scroll .div.ui-dt-c {
+                    width: 200px;
+                    white-space: nowrap;
+                    overflow-x: scroll;
+                }
+                .ui-datatable td.scrollableCell div.ui-dt-c {
+                    width: 200px;
+                    white-space: nowrap;
+                    overflow-x: scroll;
+                }
+
+                .myCalendar input{
+                    width: 90%;
+                }
+
+                @media (max-width: 960px) {
+                    .ui-panelgrid .ui-panelgrid-content label {
+                        font-size: 13px !important;
+                    }
+                }
+                p.label_field_pair {
+                    clear: both;
+                    float: none;
+                }
+                p.label_field_pair label {
+                    clear: left;
+                    display: block;
+                    float: left;
+                    text-align: right;
+                    width: 100px;
+                }
+                p.label_field_pair input {
+                    clear: right;
+                    float: left;
+                    margin-left: 10px;
+                    width: 200px;
+                }
+            </style>
+        </ui:define>
+
+
+        <ui:define  name="content"   >
+            <p:ajaxStatus styleClass=".ui-blockui"
+                          onstart="PF('status').show()" oncomplete="PF('status').hide()">
+            </p:ajaxStatus>
+
+
+            <p:dialog widgetVar="status" modal="true" closable="false" appendTo="@(body)" id="wait">
+
+                Please Wait <br/>
+                <h:graphicImage value="/resources/images/earth.gif" title="Loading..."/> <BR/>
+
+                <h:form>
+                    <p:commandButton value="Cancel" id="cancel" action="#{rBean.cancelSW()}" async="true" />
+                </h:form>
+            </p:dialog>
+
+            <p:growl id="growl" life="3000"  />
+            <h:form id="rform">
+
+
+                <div class="ui-fluid">
+                    <p:panel id="params" toggleable="true" header="Report parameters" styleClass=".ui-panel" >
+                        <h:panelGroup id="rangeFormGroup" style="text-align:center;" >
+                            <div class="ui-grid ui-grid-fixed" >
+                                <div class="ui-grid-row"  >
+                                    <div class="ui-grid-col-2">
+                                        <p:outputLabel value="Ledger:" for="ledger" />
+                                    </div>
+                                    <div class="ui-grid-col-2">
+                                        <p:autoComplete id="ledger" value="#{rBean.selectedLedger}" completeMethod="#{rBean.completeLedger}"  converter="ledgerConverter"
+                                                        dropdown="true" scrollHeight="200" required="true"
+                                                        forceSelection="true" styleClass=".ui-autocomplete-items"
+                                                        cache="true" cacheTimeout="30000" emptyMessage="Pick valid Set of Books" >
+                                            <p:ajax event="itemSelect" update="acgrid, pfrom, pto, budget, results, pivot" listener="#{rBean.scopeChanged}" />
+                                        </p:autoComplete>
+                                    </div>
+
+                                    <div class="ui-grid-col-2">
+                                        <p:outputLabel value="Period from:" for="pfrom" />
+                                    </div>
+                                    <div class="ui-grid-col-2">
+                                        <p:autoComplete id="pfrom" value="#{rBean.periodFrom}" immediate="true" completeMethod="#{rBean.completePeriod}"  converter="periodConverter"
+                                                        disabled="#{rBean.periodDisabled}" dropdown="true" scrollHeight="200" required="true"
+                                                        forceSelection="true" styleClass=".ui-autocomplete-items"
+                                                        cache="true" cacheTimeout="30000" emptyMessage="Pick valid period name" />
+                                    </div>
+                                    <div class="ui-grid-col-2">
+                                        <p:outputLabel value="Period to:" for="pto" />
+                                    </div>
+                                    <div class="ui-grid-col-2">
+                                        <p:autoComplete id="pto" value="#{rBean.periodTo}" completeMethod="#{rBean.completePeriod}"  converter="periodConverter"
+                                                        disabled="#{rBean.periodDisabled}" dropdown="true" scrollHeight="200" required="true"
+                                                        forceSelection="true" styleClass=".ui-autocomplete-items"
+                                                        cache="true" cacheTimeout="30000" emptyMessage="Pick valid period name"/>
+                                    </div>
+                                </div>
+                                <div class="ui-grid-row"    >
+                                    <div class="ui-grid-col-2">
+                                        <p:outputLabel value="Results:" for="results" />
+                                    </div>
+                                    <div class="ui-grid-col-2">
+                                        <p:autoComplete id="results" value="#{rBean.selectedResult}" completeMethod="#{rBean.completeResults}"
+                                                        disabled="#{rBean.periodDisabled}" dropdown="true" scrollHeight="200"
+                                                        forceSelection="true" styleClass=".ui-autocomplete-items"
+                                                        cache="true" cacheTimeout="30000"/>
+                                    </div>
+                                    <div class="ui-grid-col-2">
+                                        <p:outputLabel value="Budget:" for="budget" />
+                                    </div>
+                                    <div class="ui-grid-col-2">
+                                        <p:autoComplete id="budget" value="#{rBean.budget}" completeMethod="#{rBean.completeBudget}"
+                                                        disabled="#{rBean.periodDisabled}" dropdown="true" scrollHeight="200"
+                                                        forceSelection="true" styleClass=".ui-autocomplete-items"
+                                                        cache="true" cacheTimeout="30000"/>
+                                    </div>
+                                    <div class="ui-grid-col-2">
+                                        <p:outputLabel value="Pivot:" for="pivot" />
+                                    </div>
+                                    <div class="ui-grid-col-2">
+                                        <p:autoComplete id="pivot" value="#{rBean.selectedPivot}" completeMethod="#{rBean.completePivot}"  converter="pivotConverter"
+                                                        disabled="#{rBean.periodDisabled}" dropdown="true" scrollHeight="200"
+                                                        forceSelection="true" styleClass=".ui-autocomplete-items"
+                                                        cache="true" cacheTimeout="30000">
+                                        </p:autoComplete>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <p:separator />
+                            <div class="ui-fluid">
+                            <h:panelGrid columns="11" id="acgrid" cellpadding="5">
+
+                                <pe:dynaForm id="rangeForm" value="#{rBean.model}" var="data">
+
+                                    <pe:dynaFormControl type="autoComplete" for="slo">
+                                        <p:autoComplete id="slo"  value="#{data.value}"  required="#{data.required}" size="#{data.size}"
+                                                        completeMethod="#{rBean.complete}"  scrollHeight="200"
+                                                        styleClass=".ui-autocomplete-items"
+                                                        cache="true" cacheTimeout="30000" dropdown="true" emptyMessage="Pick valid segment value">
+                                            <f:attribute name="filter" value="#{data.name}" />
+                                        </p:autoComplete>
+                                    </pe:dynaFormControl>
+
+                                    <pe:dynaFormControl type="selectBooleanButton" for="bbtn">
+                                        <p:selectBooleanButton id="bbtn" value="#{data.value}" onLabel="D" offLabel="T"
+                                                               onIcon="ui-icon-check" offIcon="ui-icon-close"
+                                                               style="width:60px" styleClass=".ui-selectbooleanbutton" >
+                                        </p:selectBooleanButton>
+                                    </pe:dynaFormControl>
+
+                                    <pe:dynaFormControl type="selectOneRadio" for="desco">
+                                        <p:selectOneRadio id="desco" value="#{data.value}" styleClass=".ui-selectoneradio">
+                                            <f:selectItem itemLabel="Value" itemValue="Value"/>
+                                            <f:selectItem itemLabel="Description" itemValue="Description" />
+                                            <f:selectItem itemLabel="Both" itemValue="Both" />
+                                        </p:selectOneRadio>
+                                    </pe:dynaFormControl>
+
+                                    <pe:dynaFormControl type="autoCompleteH" for="hlp">
+                                        <p:autoComplete id="hlp"  value="#{data.value}"  required="false" size="70" disabled="#{not rBean.hlp}"
+                                                        completeMethod="#{rBean.completeHelp}"  scrollHeight="200"
+                                                        styleClass=".ui-autocomplete-items"
+                                                        cache="true" cacheTimeout="30000" dropdown="true">
+                                            <f:attribute name="filter" value="#{data.name}" />
+                                        </p:autoComplete>
+                                    </pe:dynaFormControl>
+
+                                </pe:dynaForm>
+                            </h:panelGrid>
+</div>
+                            <p:separator />
+                            <h:panelGrid columns="5" style="margin-bottom:10px" cellpadding="5" >
+                            <p:commandButton id="bstsrp" value="Submit" actionListener="#{rBean.buttonAction}" update=":growl :rform:outabs"
+                                             disabled="#{rBean.submitDisabled}" oncomplete="PF('balTable').clearFilters()"
+                                             styleClass=".ui-button" style="width:120px"/>
+
+                                <h:outputText value="Include adjustment periods:"/>
+                                <p:inputSwitch id="padj" value="#{rBean.padj}"/>
+                                <h:outputText value="Segment value's help:" />
+                                <p:inputSwitch id="hlpsw" value="#{rBean.hlp}">
+                                    <p:ajax listener="#{rBean.hlpUpd}" update=":rform:rangeForm"/>
+                                </p:inputSwitch>
+                            </h:panelGrid>
+
+                        </h:panelGroup>
+
+                    </p:panel>
+                </div>
+            <!--/h:form-->
+
+
+
+
+
+
+            <!--h:form id="outab"-->
+
+                <p:tabView id="outabs" activeIndex="#{rBean.tabIndex}">
+                    <p:tab id="bal" title="GL Balances" titleStyle="margin-bottom:10px;">
+
+                        <p:dataTable  id="bals" var="sbal" value="#{rBean.tableBal}" widgetVar="balTable" filteredValue="#{rBean.filteredBal}"
+                                      tableStyle="width:auto" styleClass="ui-datatable-hor-scroll"
+                                      rows="20"
+                                      selectionMode="single" selection="#{rBean.selectedRange}" rowKey="#{sbal.rowid}"
+                                      paginator="true"
+                                      paginatorTemplate="{CurrentPageReport} {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown}"
+                                      rowsPerPageTemplate="5,10,15">>
+                            <!--p:ajax  event="sort"  listener="#{rBean.onsort}" id="sortev" update=":rform:outabs:bals"   >
+                                <f:attribute name="event" value="event"  />
+                            </p:ajax-->
+                            <f:facet name="header">
+                                <h:outputText value="Balances" />
+                                <h:commandLink id="xls"  >
+                                    <p:graphicImage name="/images/excelx.png" width="24"/>
+                                    <f:setPropertyActionListener value="false" target="#{exporterController.customExporter}" />
+                                    <pe:exporter type="xlsx" target=":rform:outabs:bals" fileName="exported"  />
+                                </h:commandLink>
+                                <!--p:commandButton id="toggl" type="button" value="Columns"  icon="ui-icon-calculator" /-->
+                                <!--p:columnToggler datasource="bals" trigger="toggl" /-->
+                            </f:facet>
+
+
+                            <p:columnGroup  type="header"  id="colgroup">
+                                <p:row>
+                                    <c:forEach items="#{rBean.colsUpHeaders}" var="columnh"  >
+                                        <!-- <ui:repeat value="#{rBean.colsUpHeaders}" var="columnh" > -->
+                                        <p:column headerText="#{columnh.header}"  colspan="#{columnh.span}"  />
+                                        <!--   </ui:repeat> -->
+                                    </c:forEach>
+                                </p:row>
+                               <p:row>
+                                    <c:forEach items="#{rBean.columns}" var="colsm" begin="1"  >
+
+                                        <p:column  headerText="#{colsm.header}" sortBy="#{sbal[colsm.sortable]}"  filterBy="#{sbal[colsm.property]}" />
+
+                                    </c:forEach>
+                                </p:row>
+                            </p:columnGroup>
+
+
+                            <p:columns    value="#{rBean.columns}"  var="column"  columnIndexVar="colIndex"  visible="#{column.visible}"  exportable="#{column.visible}" style="min-width:100px">
+                                <h:outputText value="#{sbal[column.property]}"  >
+                                    <f:convertNumber groupingUsed="false" maxFractionDigits="2"/>
+                                </h:outputText>
+                            </p:columns>
+
+                            <!--c:forEach  items="#{rBean.columns}" var="dataCols" begin="1" >
+                                <p:column>
+                                    <h:inputText value="#{sbal[dataCols.property]}"/>
+                                </p:column>
+                            </c:forEach-->
+
+                          <!--  <c:forEach items="#{rBean.columns}" var="rcols" begin="1"  >
+                                <p:column  value="#{rcols.property}"  var="column" columnIndexVar="colIndex"  visible="#{rcols.visible}"  exportable="#{rcols.visible}" style="min-width:100px">
+                                <h:outputText value="#{sbal[rcols.property]}"  >
+                                    <f:convertNumber   maxFractionDigits="2" locale="ru_RU"/>
+                                </h:outputText>
+                                </p:column>
+                            </c:forEach> -->
+                            <!--p:outputPanel  id="outpsum" -->
+
+                            <!--p:summaryRow listener="#{rBean.setSortProperty}" id="sumrow"   >
+                                <p:column colspan="#{rBean.sortSpan}" style="text-align:right">
+                                    <h:outputText value="Total:" />
+                                </p:column>
+                                <c:forEach items="#{rBean.sumRow}" var="sumcol" >
+                                    <p:column >
+                                        <h:outputText value="#{sumcol}">
+
+                                        </h:outputText>
+                                    </p:column>
+                                </c:forEach>
+
+                            </p:summaryRow-->
+
+
+
+                            <f:facet name="footer"    >
+
+                                <p:commandButton  id="drillBtn" icon="ui-icon-search"  update=":growl :rform:outabs"
+                                                  value="Drill into details"
+                                                  actionListener="#{rBean.drillAction}"/>
+
+
+                                <p:outputLabel value="Application:" for="applic" />
+                                <p:autoComplete id="applic" value="#{applBean.selectedApps}" immediate="true" completeMethod="#{applBean.completeApps}"  converter="applConverter"
+                                                dropdown="true" scrollHeight="200"
+                                                forceSelection="true" styleClass=".ui-autocomplete-items"
+                                                cache="true" cacheTimeout="30000" emptyMessage="Pick valid application name">
+                                </p:autoComplete>
+
+                            </f:facet>
+                            <!-- oncomplete="PF('drillDialog').show()" update=":outab:drillTab" process="bals"-->
+
+
+                        </p:dataTable>
+
+                        <!--                            <p:blockUI block="bals" trigger="bals"   >
+                                     LOADING<br />
+                                      <p:commandButton value="Cancel" id="cancel"  /> <br/>
+                                     <p:graphicImage value="/resources/images/earth.gif" styleClass=".ui-blockui"/>
+                                 </p:blockUI>
+                        -->
+
+                    </p:tab>
+
+
+
+                    <p:tab title="Subledger Entries" titleStyle="margin-bottom:10px;" id="sublTab">
+
+
+                        <p:dataTable  id="drillTab" var="drill" value="#{rBean.drillTab}" widgetVar="drillTable"
+                                      tableStyle="width:auto"
+                                      selectionMode="single" selection="#{rBean.selectedDrill}" rowKey="#{drill.rowid}"
+                                      rows="5"
+                                      lazy="true"  filteredValue="#{rBean.drillFilter}"
+                                      paginator="true"
+                                      paginatorTemplate="{CurrentPageReport} {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown}"
+                                      rowsPerPageTemplate="5,10,15"
+                                      editable="true" editMode="cell">
+
+                            <f:facet name="header">
+                                <h:outputText value="SLA accounting entries"/>
+                                <h:commandLink>
+                                    <p:graphicImage name="/images/excelx.png" width="24"/>
+                                    <pe:exporter type="xlsx" target=":rform:outabs:drillTab" fileName="exported_drill" />
+                                </h:commandLink>
+                                <!--p:commandButton id="toggler" type="button" value="Columns"  icon="ui-icon-calculator" /-->
+                                <!--p:columnToggler datasource="drillTab" trigger="toggler" /-->
+                            </f:facet>
+
+
+                            <!--p:columns value="#{rBean.drillColumns}" var="drillColumn" columnIndexVar="drillColIndex" visible="#{drillColumn.visible}"  exportable="#{drillColumn.visible}" sortBy="#{drill[drillColumn.property]}" filterBy="#{drill[drillColumn.property]}" styleClass="scrollableCell"   >
+                                <f:facet name="header">
+                                    <h:outputText value="#{drillColumn.header}" />
+                                </f:facet>
+                                <h:outputText value="#{drill[drillColumn.property]}" >
+                                <f:convertNumber groupingUsed="false" maxFractionDigits="2" locale="ru_RU"/>
+                                </h:outputText>
+                            </p:columns-->
+                            <p:columnGroup  type="header"  id="drilGroup">
+                            <p:row>
+                                <c:forEach  items="#{rBean.drillColumns}" var="drillHeads" begin="1"  >
+                                <p:column headerText="#{drillHeads.header}"  filterBy="#{drillHeads.property}" sortBy="#{drillHeads.property}" field="#{drillHeads.property}">
+
+                                </p:column>
+                            </c:forEach>
+                            </p:row>
+                            </p:columnGroup>
+                            <c:forEach  items="#{rBean.drillColumns}" var="drillCols" begin="1"  >
+                                <p:column >
+                                    <h:outputText value="#{drill[drillCols.property]}" rendered="#{drillCols.header ne 'Line Description' and drillCols.header ne 'Batch name' and drillCols.header ne 'Journal name' and drillCols.header ne 'Party' and drillCols.header ne 'Party site'}"/>
+                                    <p:inputText value="#{drill[drillCols.property]}" rendered="#{drillCols.header eq 'Line Description' or drillCols.header eq 'Batch name' or drillCols.header eq 'Journal name' or drillCols.header eq 'Party' or drillCols.header eq 'Party site'}"/>
+                                </p:column>
+                            </c:forEach>
+
+                            <f:facet name="footer"    >
+
+                                <p:commandButton  id="jeBtn" icon="ui-icon-search"  update=":growl :rform:outabs"
+                                                  value="GL journal"
+                                                  actionListener="#{rBean.jeAction}" />
+                                <p:commandButton  id="slaBtn" icon="ui-icon-search"  update=":growl :rform:outabs"
+                                                  value="SLA lines"
+                                                  actionListener="#{rBean.slaAction}" />
+                            </f:facet>
+                        </p:dataTable>
+                    </p:tab>
+
+                    <p:tab title="GL Journal" titleStyle="margin-bottom:10px;"   >
+                        <div class="ui-fluid" id="jtext">
+                        <!--h:panelGroup id="jhd"-->
+
+
+                            <h:panelGrid id="jinfo" columns="8" cellpadding="5" cellspacing="5">
+                                <p:outputLabel value="Batch name:" for="bname"/>
+                                <p:inputText id="bname" value="#{rBean.selectedJe.batchName}"/>
+                                <p:outputLabel value="Journal name" for="jname"/>
+                                <p:inputText id="jname" value="#{rBean.selectedJe.journalName}"/>
+                                <p:outputLabel value="Description:" for="descr"/>
+                                <p:inputText id="descr" value="#{rBean.selectedJe.description}"/>
+                                <p:outputLabel value="Period name:" for="pname"/>
+                                <p:inputText id="pname" value="#{rBean.selectedJe.periodName}"/>
+                                <p:outputLabel value="Balance type:" for="actf"/>
+                                <p:inputText id="actf" value="#{rBean.selectedJe.balanceType}"/>
+                                <p:outputLabel value="Category:" for="jcat"/>
+                                <p:inputText id="jcat" value="#{rBean.selectedJe.category}"/>
+                                <p:outputLabel value="Source:" for="jsource"/>
+                                <p:inputText id="jsource" value="#{rBean.selectedJe.source}"/>
+                                <p:outputLabel value="Posted flag:" for="jpost"/>
+                                <p:inputText id="jpost" value="#{rBean.selectedJe.postedFlag}" />
+
+                                <p:outputLabel value="Currency:" for="cur"/>
+                                <p:inputText id="cur" value="#{rBean.selectedJe.currency}" />
+                                <p:outputLabel value="Conversion date:" for="condate"/>
+                                <p:inputText id="condate" value="#{rBean.selectedJe.currencyConversionDate}" >
+                                <f:convertDateTime pattern="MM/dd/yyyy" type="date"/>
+                                </p:inputText>
+                                <p:outputLabel value="Rate type:" for="conrtype"/>
+                                <p:inputText id="conrtype" value="#{rBean.selectedJe.currencyConversionType}" />
+                                <p:outputLabel value="Conversion rate:" for="conrate" />
+                                <p:inputText id="conrate" value="#{rBean.selectedJe.currencyConversionRate}" />
+                            <!--/h:panelGrid-->
+                            <!--p:separator/-->
+
+                            <!--h:panelGrid id="jrev" columns="8" cellpadding="5" cellspacing="5" -->
+                                <p:outputLabel value="Reversal period:" for="revper"/>
+                                <p:inputText id="revper" value="#{rBean.selectedJe.reversePeriod}" />
+                                <p:outputLabel value="Reversal status:" for="revstatus"/>
+                                <p:inputText id="revstatus" value="#{rBean.selectedJe.reverseStatus}" />
+                            <!--/h:panelGrid-->
+                            <!--p:separator/-->
+
+                            <!--h:panelGrid id="juser" columns="8" cellpadding="5" cellspacing="5"-->
+                                <p:outputLabel value="Created by:" for="crby"/>
+                                <p:inputText id="crby" value="#{rBean.selectedJe.createdBy}" />
+                                <p:outputLabel value="Last updated by:" for="lby"/>
+                                <p:inputText id="lby" value="#{rBean.selectedJe.lastUpdatedBy}" />
+                                <p:outputLabel value="Effective date:" for="edate"/>
+                                <p:inputText  id="edate" value="#{rBean.selectedJe.effectiveDate}">
+                                    <f:convertDateTime pattern="MM/dd/yyyy" type="date"/>
+                                </p:inputText>
+                                <p:outputLabel value="Last update date:" for="ldate"/>
+                                <p:inputText id="ldate" value="#{rBean.selectedJe.lastUpdateDate}" >
+                                <f:convertDateTime pattern="MM/dd/yyyy" type="date"/>
+                                </p:inputText>
+                            </h:panelGrid>
+                            <!--p:separator/-->
+                        <!--/h:panelGroup-->
+                        </div>
+                        <p:dataTable id="jeTab" var="jel" value="#{rBean.jeTable}" widgetVar="jeTable" filteredValue="#{rBean.fJeTable}"
+                                     tableStyle="width:auto" styleClass="ui-datatable-hor-scroll"
+                                     rows="5" selectionMode="single" selection="#{rBean.selectedLine}" rowKey="#{jel.rowid}"
+                                     paginator="true"
+                                     paginatorTemplate="{CurrentPageReport} {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown}"
+                                     rowsPerPageTemplate="5,10,15">
+
+                            <f:facet name="header">
+                                <h:outputText value="GL journal"/>
+                                <h:commandLink>
+                                    <p:graphicImage name="/images/excelx.png" width="24"/>
+                                    <pe:exporter type="xlsx" target=":rform:outabs:jeTab" fileName="exported_je_journal" />
+                                </h:commandLink>
+                            </f:facet>
+
+                        <p:columns value="#{rBean.jeColumns}" var="jcolumn" columnIndexVar="jelColIndex" style="min-width:100px"
+                        visible="#{jcolumn.visible}" exportable="#{jcolumn.visible}" sortBy="#{jel[jcolumn.property]}" filterBy="#{jel[jcolumn.property]}" >
+                            <f:facet name="header">
+                                <h:outputText value="#{jcolumn.header}" />
+                            </f:facet>
+                            <h:outputText value="#{jel[jcolumn.property]}" rendered="#{jcolumn.header ne 'Line Description'}">
+                                <f:convertNumber groupingUsed="false" maxFractionDigits="2"/>
+                            </h:outputText>
+                            <p:inputText value="#{jel[jcolumn.property]}" rendered="#{jcolumn.header eq 'Line Description'}"/>
+                        </p:columns>
+                        </p:dataTable>
+                    </p:tab>
+
+                    <p:tab title="SLA entries per transaction" titleStyle="margin-bottom:10px;"   >
+
+                        <p:dataTable id="slaTab" var="sla" value="#{rBean.slaTable}" widgetVar="slaTable" filteredValue="#{rBean.fSlaTable}"
+                                     tableStyle="width:auto" styleClass="ui-datatable-hor-scroll"
+                                     rows="5" selectionMode="single" selection="#{rBean.selectedSlaLine}" rowKey="#{sla.rowid}"
+                                     paginator="true"
+                                     paginatorTemplate="{CurrentPageReport} {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown}"
+                                     rowsPerPageTemplate="5,10,15">
+
+                            <f:facet name="header">
+                                <h:outputText value="SLA entries"/>
+                                <h:commandLink>
+                                    <p:graphicImage name="/images/excelx.png" width="24"/>
+                                    <pe:exporter type="xlsx" target=":rform:outabs:slaTab" fileName="exported_sla_lines" />
+                                </h:commandLink>
+                            </f:facet>
+
+                            <p:columns id="sl" value="#{rBean.slaColumns}" var="slaColumn" columnIndexVar="slaColIndex" style="min-width:100px"
+                                       visible="#{slaColumn.visible}" exportable="#{slaColumn.visible}" sortBy="#{sla[slaColumn.property]}" filterBy="#{sla[slaColumn.property]}" >
+                                <f:facet name="header">
+                                    <h:outputText value="#{slaColumn.header}" />
+                                </f:facet>
+                                        <h:outputText value="#{sla[slaColumn.property]}" rendered="#{slaColumn.header eq 'Accounting date' or slaColumn.header eq 'Conversion date'}" >
+                                            <f:convertDateTime pattern="MM/dd/yyyy" type="date"/>
+                                        </h:outputText>
+                                <p:inputText  value="#{sla[slaColumn.property]}" rendered="#{slaColumn.header eq 'Header description' or slaColumn.header eq 'Line description' or slaColumn.header eq 'Party' or slaColumn.header eq 'Party site'}"/>
+                                        <h:outputText value="#{sla[slaColumn.property]}" rendered="#{slaColumn.header ne 'Accounting date' and slaColumn.header ne 'Conversion date' and slaColumn.header ne 'Header description' and slaColumn.header ne 'Line description' and slaColumn.header ne 'Party' and slaColumn.header ne 'Party site'}">
+                                            <f:convertNumber groupingUsed="false" maxFractionDigits="2" />
+                                        </h:outputText>
+
+
+
+                            </p:columns>
+
+                        </p:dataTable>
+                    </p:tab>
+
+                </p:tabView>
+            </h:form>
+
+        </ui:define>
+    </ui:composition>
+</h:body>
+</html>
+
+
+
+
+
+
+
+
+

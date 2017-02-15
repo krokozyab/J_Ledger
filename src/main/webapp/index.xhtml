@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui"
+      >
+
+    <!--  xmlns="http://java.sun.com/xml/ns/javaee" -->
+    <h:head>
+        <title>Facelet Title</title>
+        <f:metadata>
+         <!--   <f:viewAction action="#{saupbalBean.populateBal}"/> -->
+         <!-- <f:viewAction action="#{structBean.populateStruct}"/> -->
+
+        </f:metadata>
+
+    </h:head>
+
+    <h:body styleClass="BlueBody GrayDarkBack" style="background-image:url(#{resource['titan-layout:images/loginback.svg']}); background-size:cover; background-position:right top;  background-attachment:fixed;">
+        <ui:composition template="WEB-INF/layout/template.xhtml"  >
+
+            <ui:define name="leftmenu">
+                Menu
+                <h:form id="menuForm">
+                    <!--   <p:commandLink id="ledgers" ajax="false" action="admin/ledgers" value="Ledgers"/>
+                       <br/>
+                       <p:commandLink id="Suppliers" ajax="false" action="suppliers/supBal" value="Suppliers"/>
+                                           <br/>
+                       <p:commandLink id="DynaTest" ajax="false" action="dyna/dyna" value="DynaTest"/>
+                        <br/>
+                    -->
+                    <p:commandLink id="RangeTest" ajax="false" action="dyna/rangeTab" value="rangeTab"/>
+                    <br/>
+                    <p:commandLink id="SumRowTest" ajax="false" action="dyna/sumrow" value="sumrow"/>
+                    <br/>
+                    <p:commandLink id="jetst" ajax="false" action="dyna/glJournal" value="Gjournal"/>
+                </h:form>
+            </ui:define>
+
+            <ui:define name="content"  >
+
+
+
+            </ui:define>
+        </ui:composition>
+        <br />
+        <h:link outcome="welcomePrimefaces" value="Primefaces welcome page" />
+    </h:body>
+</html>
+
+
+

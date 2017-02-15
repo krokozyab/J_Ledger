@@ -1,0 +1,207 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:pe="http://primefaces.org/ui/extensions">
+    <h:head>
+        <title>Facelet Title</title>
+
+
+    </h:head>
+
+    <h:body >
+         <f:metadata>
+            <f:viewAction action="#{structBean.populateStruct}"/>
+        </f:metadata>
+        <ui:composition template="../WEB-INF/layout/template.xhtml"  >
+            <ui:define name="content"  >
+
+                <h:form id="mform">
+                    <p:growl id="msgs" showDetail="true" />
+
+                    <p:panel id="hdr" toggleable="true" header="Params" >
+                        <p:panelGrid id="pg" columns="5" layout="tabular"  >
+                            <h:commandLink >
+                                <p:graphicImage name="/images/excelx.png" width="24"/>
+                                <p:dataExporter type="xls" target="spls" fileName="suppliers" />
+                            </h:commandLink>
+
+                            <p:autoComplete id="sup" completeMethod="#{saupbalBean.autoCompleteSupplier}" 
+                                            value="#{saupbalBean.sup_list}"
+                                            itemLabel="#{saupbalBean.sup_list}"
+                                            itemValue="#{saupbalBean.sup_list}"
+                                            dropdown="true"
+                                            forceSelection="true" size="8"
+                                            
+                                            />
+
+                            <p:outputLabel for="filtermod" value="Filter:" />
+                            <p:selectOneRadio id="filtermod" layout="grid" columns="3" value="#{saupbalBean.comparatorType}">
+                                <f:selectItem itemLabel="g" itemValue="gt" />
+                                <f:selectItem itemLabel="l" itemValue="lt" />
+                                <f:selectItem itemLabel="e" itemValue="eq" />
+                            </p:selectOneRadio>
+
+                        </p:panelGrid>
+                    </p:panel>
+
+                    <h:panelGroup id="dynaFormGroup">  
+                        <p:messages id="messages" showSummary="true"/>  
+
+                        <pe:dynaForm id="dynaForm" value="#{dyanaForm.model}" var="data">  
+
+                            <pe:dynaFormControl type="autoComplete" for="txt">  
+                                <p:autoComplete id="txt"  value="#{data.value}" size="#{data.size}" required="#{data.required}" 
+                                                completeMethod="#{dyanaForm.complete}"
+                                                style="font-weight: bold;" >
+<f:attribute name="filter" value="#{data.name}" />
+                                </p:autoComplete>    
+                            </pe:dynaFormControl>  
+
+
+                        </pe:dynaForm>  
+                    </h:panelGroup>
+                    
+
+
+
+
+
+
+                </h:form>    
+  
+                        <h1><h:outputText value="List"/></h1>
+                        <p:dataTable resizableColumns="true" resizeMode="expand" liveResize="true" scrollWidth="900" value="#{structBean.flexStruct}" var="item"
+                        scrollable="true"  scrollRows="20" liveScroll="true"   scrollHeight="300"
+                        
+                        >
+
+                            <p:column>
+                                <f:facet name="header">
+                                    <h:outputText value="FlexValueSetId"/>
+                                </f:facet>
+                                <h:outputText value="#{item.flexValueSetId}"/>
+                            </p:column>
+                            <p:column>
+                                <f:facet name="header">
+                                    <h:outputText value="LedgerName"/>
+                                </f:facet>
+                                <h:outputText value="#{item.ledgerName}"/>
+                            </p:column>
+                            <p:column>
+                                <f:facet name="header">
+                                    <h:outputText value="LedgerId"/>
+                                </f:facet>
+                                <h:outputText value="#{item.ledgerId}"/>
+                            </p:column>
+                            <p:column>
+                                <f:facet name="header">
+                                    <h:outputText value="CoaId"/>
+                                </f:facet>
+                                <h:outputText value="#{item.coaId}"/>
+                            </p:column>
+                            <p:column>
+                                <f:facet name="header">
+                                    <h:outputText value="StructName"/>
+                                </f:facet>
+                                <h:outputText value="#{item.structName}"/>
+                            </p:column>
+                            <p:column>
+                                <f:facet name="header">
+                                    <h:outputText value="SegmentName"/>
+                                </f:facet>
+                                <h:outputText value="#{item.segmentName}"/>
+                            </p:column>
+                            <p:column>
+                                <f:facet name="header">
+                                    <h:outputText value="SegmentNum"/>
+                                </f:facet>
+                                <h:outputText value="#{item.segmentNum}"/>
+                            </p:column>
+                            <p:column>
+                                <f:facet name="header">
+                                    <h:outputText value="FormLeftPrompt"/>
+                                </f:facet>
+                                <h:outputText value="#{item.formLeftPrompt}"/>
+                            </p:column>
+                            <p:column>
+                                <f:facet name="header">
+                                    <h:outputText value="ColumnName"/>
+                                </f:facet>
+                                <h:outputText value="#{item.columnName}"/>
+                            </p:column>
+                            <p:column>
+                                <f:facet name="header">
+                                    <h:outputText value="Balancing"/>
+                                </f:facet>
+                                <h:outputText value="#{item.balancing}"/>
+                            </p:column>
+                            <p:column>
+                                <f:facet name="header">
+                                    <h:outputText value="CostCenter"/>
+                                </f:facet>
+                                <h:outputText value="#{item.costCenter}"/>
+                            </p:column>
+                            <p:column>
+                                <f:facet name="header">
+                                    <h:outputText value="NaturalAccount"/>
+                                </f:facet>
+                                <h:outputText value="#{item.naturalAccount}"/>
+                            </p:column>
+                            <p:column>
+                                <f:facet name="header">
+                                    <h:outputText value="Intercompany"/>
+                                </f:facet>
+                                <h:outputText value="#{item.intercompany}"/>
+                            </p:column>
+                            <p:column>
+                                <f:facet name="header">
+                                    <h:outputText value="SecondaryTracking"/>
+                                </f:facet>
+                                <h:outputText value="#{item.secondaryTracking}"/>
+                            </p:column>
+                            <p:column>
+                                <f:facet name="header">
+                                    <h:outputText value="Global"/>
+                                </f:facet>
+                                <h:outputText value="#{item.global}"/>
+                            </p:column>
+                            <p:column>
+                                <f:facet name="header">
+                                    <h:outputText value="FlexValueSetName"/>
+                                </f:facet>
+                                <h:outputText value="#{item.flexValueSetName}"/>
+                            </p:column>
+                            <p:column>
+                                <f:facet name="header">
+                                    <h:outputText value="DisplaySize"/>
+                                </f:facet>
+                                <h:outputText value="#{item.displaySize}"/>
+                            </p:column>
+                            <p:column>
+                                <f:facet name="header">
+                                    <h:outputText value="DefaultType"/>
+                                </f:facet>
+                                <h:outputText value="#{item.defaultType}"/>
+                            </p:column>
+                            <p:column>
+                                <f:facet name="header">
+                                    <h:outputText value="DefaultValue"/>
+                                </f:facet>
+                                <h:outputText value="#{item.defaultValue}"/>
+                            </p:column>
+                        </p:dataTable>
+             
+
+
+
+            </ui:define>
+        </ui:composition> 
+    </h:body>
+</html>
+
+
+

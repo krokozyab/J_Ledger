@@ -1,0 +1,143 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:c="http://java.sun.com/jsp/jstl/core">
+
+
+    <style type="text/css">
+        .ui-widget, .ui-widget .ui-widget {
+            font-size: 90% !important;
+        }
+    </style>
+
+<h:body>
+
+    <ui:define name="head">
+        <style type="text/css">
+            .ui-panelgrid-content > * {
+                box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+            }
+            .ui-datatable-hor-scroll .ui-datatable-tablewrapper,.scrolling-div .ui-datatable-tablewrapper{
+                overflow: auto;
+                width: 100%;
+                padding-bottom: 5px;
+                word-wrap: break-word;
+            }
+
+            .myCalendar input{
+                width: 90%;
+            }
+
+            @media (max-width: 960px) {
+                .ui-panelgrid .ui-panelgrid-content label {
+                    font-size: 13px !important;
+                }
+            }
+            p.label_field_pair {
+                clear: both;
+                float: none;
+            }
+            p.label_field_pair label {
+                clear: left;
+                display: block;
+                float: left;
+                text-align: right;
+                width: 100px;
+            }
+            p.label_field_pair input {
+                clear: right;
+                float: left;
+                margin-left: 10px;
+                width: 200px;
+            }
+        </style>
+    </ui:define>
+
+
+<h:form id="jln">
+
+
+
+<h:panelGroup id="jhd">
+
+
+        <h:panelGrid id="jinfo" columns="8" cellpadding="5" cellspacing="5">
+            <p:outputLabel value="Batch name:" for="bname"/>
+            <p:inputText id="bname" value="#{jeheader.selectedJe.batchName}"   />
+            <p:outputLabel value="Journal name" for="jname"/>
+            <h:inputText id="jname" value="#{jeheader.selectedJe.journalName}" disabled="true"/>
+            <p:outputLabel value="Description:" for="descr"/>
+            <h:inputText id="descr" value="#{jeheader.selectedJe.description}" disabled="true"/>
+            <p:outputLabel value="Period name:" for="pname"/>
+            <h:inputText id="pname" value="#{jeheader.selectedJe.periodName}" disabled="true"/>
+            <p:outputLabel value="Balance type:" for="actf"/>
+            <h:inputText id="actf" value="#{jeheader.selectedJe.balanceType}" disabled="true" />
+            <p:outputLabel value="Category:" for="jcat"/>
+            <p:inputText id="jcat" value="#{jeheader.selectedJe.category}" disabled="true"/>
+            <p:outputLabel value="Source:" for="jsource"/>
+            <p:inputText id="jsource" value="#{jeheader.selectedJe.source}" readonly="true"/>
+            <p:outputLabel value="Posted flag:" for="jpost"/>
+            <p:inputText id="jpost" value="#{jeheader.selectedJe.postedFlag}" readonly="true" />
+        </h:panelGrid>
+
+        <p:separator/>
+        <h:panelGrid id="jconv" columns="8" cellpadding="5" cellspacing="5">
+            <p:outputLabel value="Currency:" for="cur"/>
+            <p:inputText id="cur" value="#{jeheader.selectedJe.currency}" />
+            <p:outputLabel value="Conversion date:" for="condate"/>
+            <p:inputText id="condate" value="#{jeheader.selectedJe.currencyConversionDate}" readonly="true"/>
+            <p:outputLabel value="Rate type:" for="conrtype"/>
+            <p:inputText id="conrtype" value="#{jeheader.selectedJe.currencyConversionType}" readonly="true"/>
+            <p:outputLabel value="Conversion rate:" for="conrate" />
+            <p:inputText id="conrate" value="#{jeheader.selectedJe.currencyConversionRate}" readonly="true"/>
+        </h:panelGrid>
+        <p:separator/>
+
+            <h:panelGrid id="jrev" columns="8" cellpadding="5" cellspacing="5" >
+             <p:outputLabel value="Reversal period:" for="revper"/>
+             <p:inputText id="revper" value="#{jeheader.selectedJe.reversePeriod}" readonly="true"/>
+                <p:outputLabel value="Reversal status:" for="revstatus"/>
+                <p:inputText id="revstatus" value="#{jeheader.selectedJe.reverseStatus}" readonly="true"/>
+            </h:panelGrid>
+            <p:separator/>
+
+        <h:panelGrid id="juser" columns="8" cellpadding="5" cellspacing="5">
+            <p:outputLabel value="Created by:" for="crby"/>
+            <p:inputText id="crby" value="#{jeheader.selectedJe.createdBy}" readonly="true"/>
+            <p:outputLabel value="Last updated by:" for="lby"/>
+            <p:inputText id="lby" value="#{jeheader.selectedJe.lastUpdatedBy}" readonly="true"/>
+            <p:outputLabel value="Last update date:" for="ldate"/>
+            <p:inputText id="ldate" value="#{jeheader.selectedJe.lastUpdateDate}" readonly="true"/>
+        </h:panelGrid>
+        <p:separator/>
+</h:panelGroup>
+
+<h:panelGroup id="jtb">
+            <p:dataTable id="jeTab" var="jel" value="#{jeheader.jeTable}" widgetVar="jeTable"
+                          tableStyle="width:auto" styleClass="ui-datatable-hor-scroll"
+                          rows="20" selectionMode="single" selection="#{jeheader.selectedLine}" rowKey="#{jel.rowid}">
+
+                <p:columns value="#{jeheader.jeColumns}" var="column" columnIndexVar="jelColIndex" style="min-width:100px">
+                    <f:facet name="header">
+                        <h:outputText value="#{column.header}" />
+                    </f:facet>
+                    <h:outputText value="#{jel[column.property]}" />
+                </p:columns>
+
+            </p:dataTable>
+</h:panelGroup>
+
+</h:form>
+
+</h:body>
+
+
+
+</html>
+

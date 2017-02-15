@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>Facelet Title</title>
+        <f:metadata>
+            <f:viewAction action="#{saupbalBean.populateBal}"/>
+        </f:metadata>
+    </h:head>
+    <h:body >
+        <ui:composition template="WEB-INF/layout/template.xhtml">
+            <ui:define name="content">
+                <h:form>
+
+                    <h3>Привет</h3>
+                    <h3>Suppliers</h3>
+                    <br/>
+                    <p:dataTable id="spls" value="#{saupbalBean.supBalList}"
+                                 var="supplier">
+                        <p:column id="company" headerText="Компания">
+                            <h:outputText value="#{supBal.company}"/>
+                        </p:column>
+                        <p:column id="company" headerText="Счет">
+                            <h:outputText value="#{supBal.account}"/>
+                        </p:column>
+                        <p:column id="company" headerText="Поставщик">
+                            <h:outputText value="#{supBal.supplierName}"/>
+                        </p:column>
+                        <p:column id="company" headerText="Документ">
+                            <h:outputText value="#{supBal.docType}"/>
+                        </p:column>
+                        <p:column id="company" headerText="Валюта">
+                            <h:outputText value="#{supBal.currencyCode}"/>
+                        </p:column>
+                        <p:column id="company" headerText="Сальдо">
+                            <h:outputText value="#{supBal.enteredCrBeg}"/>
+                        </p:column>
+
+                    </p:dataTable>                        
+                </h:form>    
+
+
+            </ui:define>
+        </ui:composition>
+    </h:body>
+</html>
+
+
+

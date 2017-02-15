@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+    
+         <context-param>
+    <param-name>primefaces.THEME</param-name>
+    <param-value>sunny</param-value>
+  </context-param>
+    
+    <h:head>
+        <title>Facelet Title</title>
+        <f:metadata>
+            <f:viewAction action="#{ledgerBean.populateLedgers}"/>
+        </f:metadata>
+    </h:head>
+    <h:body >
+        <ui:composition template="/WEB-INF/layout/template.xhtml">
+            <ui:define name="content">
+                <h:form> 
+                    <h3>Ledgers</h3>
+                    <br/>
+                    <p:dataTable id="lgs" value="#{ledgerBean.ledgersList}"
+                                 var="ledger">
+                        
+                                <p:columnGroup type="header">
+            <p:row>
+                <p:column colspan="10" headerText="Комбинация счетов" />
+            </p:row>
+
+        </p:columnGroup>
+                        
+                        
+                        
+                        <p:column id="lgId" headerText="Ledger Id">
+                            <h:outputText value="#{ledger.ledgerId}"/>
+                        </p:column>
+                        
+                        <p:column id="lgName" headerText="Name">
+                            <h:outputText value="#{ledger.ledgerName}"/>
+                        </p:column>
+                    </p:dataTable>
+                </h:form>    
+            
+                
+            </ui:define>
+        </ui:composition>
+    </h:body>
+</html>
+

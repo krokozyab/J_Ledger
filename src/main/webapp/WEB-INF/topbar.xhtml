@@ -1,0 +1,49 @@
+<ui:composition 
+
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:p="http://primefaces.org/ui">
+    
+
+        <!-- TOPBAR -->
+        <div id="layout-topbar">
+
+            <!-- LOGO -->
+            <a href="dashboard.xhtml" id="logo">
+                <h:graphicImage name="images/logo.svg" id="forFlying" library="titan-layout" />
+                <h:graphicImage name="images/logo2.svg" id="forFixed" library="titan-layout" />
+            </a>
+
+            <!-- MENUBUTTON -->
+            <a id="menu-button"> <i class="icon-chevron-down"></i> </a>
+
+            <!-- SEARCH -->
+
+            <!-- TOPBAR LINKS -->
+            <a id="topmenu-button"> <i class="icon-list2"></i> </a>
+
+            <ul id="topbar-menu">
+                <li><a href="#"><i class="icon-unlock-stroke"></i> Log In/Sign Up</a></li>
+                <li><a href="#"><i class="icon-map-pin-fill"></i> Languages</a></li>
+                <li><a href="#"><i class="icon-cloud-download"></i> Downloads</a></li>
+                <li><a href="#"><i class="icon-settings"></i> Settings</a></li>
+            </ul>
+
+            <!-- MENU COVER -->
+            <div id="layout-menu-cover">
+                <ui:include src="layoutmenu.xhtml" />
+            </div>
+            
+        </div>
+    
+        <!-- TOPMENU -->
+        <ul id="top-menu">
+            <li><a href="#"><i class="icon-cog2"></i> Settings</a></li>
+            <li><a href="#"><i class="icon-stats2"></i> Analytics</a></li>
+            <li><a href="#"><i class="icon-calendar3"></i> Schedule</a></li>
+            <li><a href="#"><i class="icon-repo"></i> Invoices</a></li>    
+        </ul>
+    
+</ui:composition>

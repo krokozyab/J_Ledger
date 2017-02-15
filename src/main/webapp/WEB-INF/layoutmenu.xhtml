@@ -1,0 +1,113 @@
+<ui:composition 
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:p="http://primefaces.org/ui"
+    xmlns:pt="http://primefaces.org/titan">
+
+    <h:form id="menuform">
+        
+        <pt:menu widgetVar="TitanMenu">
+            <p:submenu id="pt_dashboards" label="Titan Dashboards" icon="icon-layers">
+                <p:menuitem id="pt_pro_page" value="Your Promotion Page" icon="icon-dashboard" outcome="/empty-page"/>
+                <!--p:menuitem id="pt_db_v" value="Titan Dashboard Highlighted" icon="icon-dashboard" outcome="/dashboard"/>
+                <p:menuitem id="pt_db_v1" value="Titan Dashboard Simple" icon="icon-dashboard" outcome="/dashboard2"/>
+                <p:menuitem id="pt_db_v2" value="Titan Dashboard Charts" icon="icon-dashboard" outcome="/dashboard3"/-->
+            </p:submenu>
+            <!--p:submenu id="pt_menuopt" label="Bar And Menu Options" icon="icon-equalizer">
+                <p:menuitem id="pt_boxed" url="#" value="Boxed Layout" icon="icon-versions" onclick="PF('TitanMenu').changeBodyClass('BoxedLayout');"/>
+                <p:menuitem id="pt_flying" url="#" value="Flying Topbar" icon="icon-rocket2" onclick="PF('TitanMenu').changeBodyClass('FlyingTopbar');"/>
+                <p:menuitem id="pt_fixed" url="#" value="Fixed Topbar" icon="icon-rocket2" onclick="PF('TitanMenu').changeBodyClass('FixedTopbar');"/>
+                <p:menuitem id="pt_slim" url="#" value="Slim Main Menu" icon="icon-list2" onclick="PF('TitanMenu').changeBodyClass('SlimMenu');"/>
+                <p:menuitem id="pt_wide" url="#" value="Wide Main Menu" icon="icon-grid" onclick="PF('TitanMenu').changeBodyClass('WideMenu');"/>
+            </p:submenu>
+            <p:submenu id="pt_theme" label="Titan Theme" icon="icon-eye2">
+                <p:menuitem id="pt_sample" value="Sample Page" icon="icon-device-desktop" outcome="/sample" />
+                <p:menuitem id="pt_forms" value="Form Elements" icon="icon-gist" outcome="/forms" />
+                <p:menuitem id="pt_data" value="Data Components" icon="icon-database" outcome="/data" />
+                <p:menuitem id="pt_datatable" value="DataTable" icon="icon-calendar2" outcome="/datatable" />
+                <p:menuitem id="pt_panels" value="Panels" icon="icon-stack2" outcome="/panel" />
+                <p:menuitem id="pt_overlays" value="Overlays" icon="icon-browser" outcome="/overlay" />
+                <p:menuitem id="pt_menus" value="Menus" icon="icon-list-unordered" outcome="/menu" />
+                <p:menuitem id="pt_messages" value="Messages" icon="icon-alarm" outcome="/messages" />
+                <p:menuitem id="pt_charts" value="Charts" icon="icon-share" outcome="/charts" />
+                <p:menuitem id="pt_fileupload" value="FileUpload" icon="icon-cloud-upload2" outcome="/file" />
+                <p:menuitem id="pt_misc" value="Misc" icon="icon-pictures3" outcome="/misc" />
+            </p:submenu>
+            <p:submenu id="pt_default" label="Default Pages" icon="icon-list">
+                <p:menuitem id="pt_empty" value="Empty Page" icon="icon-box2" outcome="/empty-page" />
+                <p:menuitem id="pt_login" value="Login Page" icon="icon-cord" outcome="/login" />
+                <p:menuitem id="pt_error" value="Error Page" icon="icon-cancel" outcome="/error" />
+                <p:menuitem id="pt_404" value="404 Page" icon="icon-search" outcome="/404" />
+                <p:menuitem id="pt_access" value="Access Denied Page" icon="icon-hand" outcome="/access-denied" />
+            </p:submenu>
+            <p:submenu id="pt_hierarchy" label="Menu Hierarchy" icon="icon-share">
+                <p:submenu id="pt_sm1" label="Submenu 1" icon="icon-plus2">
+                    <p:submenu id="pt_sm11" label="Submenu 1.1" icon="icon-plus2">
+                        <p:submenu id="pt_sm111" label="Submenu 1.1.1" icon="icon-plus2">
+                            <p:menuitem id="pt_lnk1111" value="Link 1" icon="icon-link3" url="#" />
+                            <p:menuitem id="pt_lnk1112" value="Link 2" icon="icon-link3" url="#" />
+                            <p:menuitem id="pt_lnk1113" value="Link 3" icon="icon-link3" url="#" />
+                        </p:submenu>
+                    </p:submenu>
+                </p:submenu>
+                <p:submenu id="pt_sm2" label="Submenu 2" icon="icon-plus2">
+                    <p:submenu id="pt_21" label="Submenu 2.1" icon="icon-plus2">
+                        <p:submenu id="pt_211" label="Submenu 2.1.1" icon="icon-plus2">
+                            <p:menuitem id="pt_lnk2111" value="Link 1" icon="icon-link3" url="#" />
+                            <p:menuitem id="pt_lnk2112" value="Link 2" icon="icon-link3" url="#" />
+                            <p:menuitem id="pt_lnk2113" value="Link 3" icon="icon-link3" url="#" />
+                        </p:submenu>
+                        <p:submenu id="pt_212" label="Submenu 2.1.2" icon="icon-plus2">
+                            <p:menuitem id="pt_lnk2121" value="Link 1" icon="icon-link3" url="#" />
+                            <p:menuitem id="pt_lnk2122" value="Link 2" icon="icon-link3" url="#" />
+                            <p:menuitem id="pt_lnk2123" value="Link 3" icon="icon-link3" url="#" />
+                        </p:submenu>
+                    </p:submenu>
+                </p:submenu>
+            </p:submenu>
+             
+            <p:submenu id="rm_links" label="Font Icons And Docs" icon="icon-atom">
+                <p:menuitem id="pt_icons" value="Font Icons" icon="icon-squirrel" outcome="/font-icons" />
+                <p:submenu id="rm_docs" label=" Documentation" icon="icon-plus2">
+                    <p:submenu id="rm_docs_core" label=" Core CSS Docs" icon="icon-plus2">
+                        <p:menuitem id="rm_docs_1" value="Installation" icon="icon-gist" outcome="/docs/core/installation" />
+                        <p:menuitem id="rm_docs_2" value="Menus" icon="icon-gist" outcome="/docs/core/menus" />
+                        <p:menuitem id="rm_docs_3" value="Responsive Mode" icon="icon-gist" outcome="/docs/core/responsive-mode" />
+                        <p:menuitem id="rm_docs_4" value="ContainerX" icon="icon-gist" outcome="/docs/core/containerx" />
+                        <p:menuitem id="rm_docs_30" value="Flex Boxes" icon="icon-gist" outcome="/docs/core/flex" />
+                        <p:menuitem id="rm_docs_5" value="WidX" icon="icon-gist" outcome="/docs/core/widx" />
+                        <p:menuitem id="rm_docs_6" value="Selection" icon="icon-gist" outcome="/docs/core/selection" />
+                        <p:menuitem id="rm_docs_7" value="Visibility" icon="icon-gist" outcome="/docs/core/visibilities" />
+                        <p:menuitem id="rm_docs_8" value="Displaying" icon="icon-gist" outcome="/docs/core/displaying" />
+                        <p:menuitem id="rm_docs_9" value="Positioning" icon="icon-gist" outcome="/docs/core/positioning" />
+                        <p:menuitem id="rm_docs_10" value="Underline" icon="icon-gist" outcome="/docs/core/underline" />
+                        <p:menuitem id="rm_docs_11" value="Floating" icon="icon-gist" outcome="/docs/core/floating" />
+                        <p:menuitem id="rm_docs_12" value="Overflows" icon="icon-gist" outcome="/docs/core/overflows" />
+                        <p:menuitem id="rm_docs_13" value="Empty Boxes" icon="icon-gist" outcome="/docs/core/empty-boxes" />
+                        <p:menuitem id="rm_docs_14" value="Opacity" icon="icon-gist" outcome="/docs/core/opacity" />
+                        <p:menuitem id="rm_docs_15" value="Text Aligning" icon="icon-gist" outcome="/docs/core/text-aligning" />
+                        <p:menuitem id="rm_docs_16" value="Box Sizing" icon="icon-gist" outcome="/docs/core/box-sizing" />
+                        <p:menuitem id="rm_docs_17" value="Font Size" icon="icon-gist" outcome="/docs/core/font-size" />
+                        <p:menuitem id="rm_docs_18" value="Font Weights" icon="icon-gist" outcome="/docs/core/font-weights" />
+                        <p:menuitem id="rm_docs_19" value="Transitions" icon="icon-gist" outcome="/docs/core/transitions" />
+                        <p:menuitem id="rm_docs_27" value="Paddings" icon="icon-gist" outcome="/docs/core/paddings" />
+                        <p:menuitem id="rm_docs_28" value="Zoom Effects" icon="icon-gist" outcome="/docs/core/zoom-effects" />
+                    </p:submenu>
+                    <p:submenu id="rm_docs_layout" label="Layout CSS Docs" icon="icon-plus2">
+                        <p:menuitem id="rm_docs_20" value="LESS" icon="icon-gist" outcome="/docs/layout/less" />
+                        <p:menuitem id="rm_docs_21" value="Sections" icon="icon-gist" outcome="/docs/layout/sections" />
+                        <p:menuitem id="rm_docs_22" value="Text Colors" icon="icon-gist" outcome="/docs/layout/text-colors" />
+                        <p:menuitem id="rm_docs_23" value="Background Colors" icon="icon-gist" outcome="/docs/layout/background-colors" />
+                        <p:menuitem id="rm_docs_25" value="Separators" icon="icon-gist" outcome="/docs/layout/separators" />
+                        <p:menuitem id="rm_docs_26" value="Effects" icon="icon-gist" outcome="/docs/layout/effects" />
+                        <p:menuitem id="rm_docs_29" value="Font Families" icon="icon-gist" outcome="/docs/layout/font-families" />
+                    </p:submenu>
+                </p:submenu>
+            </p:submenu-->
+        </pt:menu>
+        
+    </h:form>
+    
+</ui:composition>

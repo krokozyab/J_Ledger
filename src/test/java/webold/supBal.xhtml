@@ -1,0 +1,245 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>Facelet Title</title>
+        <f:metadata>
+            <f:viewAction action="#{saupbalBean.populateBal}"/>
+        </f:metadata>
+
+    </h:head>
+
+    <h:body >
+        <ui:composition template="../WEB-INF/layout/template.xhtml"  >
+            <ui:define name="content"  >
+
+                <h:form id="mform">
+<p:growl id="msgs" showDetail="true" />
+
+                    <p:panel id="hdr" toggleable="true" header="Params" >
+                        <p:panelGrid id="pg" columns="4">
+                            <h:commandLink >
+                                <p:graphicImage name="/images/excelx.png" width="24"/>
+                                <p:dataExporter type="xls" target="spls" fileName="suppliers" />
+                            </h:commandLink>
+
+                            <p:autoComplete id="sup" completeMethod="#{saupbalBean.autoCompleteSupplier}" 
+                                            value="#{saupbalBean.sup_list}"
+                                            itemLabel="#{saupbalBean.sup_list}"
+                                            itemValue="#{saupbalBean.sup_list}"
+                                            />
+
+                            <p:outputLabel for="filtermod" value="Filter:" />
+                            <p:selectOneRadio id="filtermod" layout="grid" columns="3" value="#{saupbalBean.comparatorType}">
+                                <f:selectItem itemLabel="g" itemValue="gt" />
+                                <f:selectItem itemLabel="l" itemValue="lt" />
+                                <f:selectItem itemLabel="e" itemValue="eq" />
+                            </p:selectOneRadio>
+
+                        </p:panelGrid>
+
+                    </p:panel>
+
+
+
+                    <p:dataTable id="spls" value="#{saupbalBean.supBalList}" var="supplier" 
+                                 scrollable="true"  scrollRows="20" liveScroll="true"   scrollHeight="500"                              
+                                 paginatorTemplate="{CurrentPageReport}  {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} "
+                                 paginator="true" rows="20" 
+                                 sortCol="#{supplier.supplierName}"
+                                 rowKey="#{supplier.id}"
+                                 selectionMode="single"
+                                 selection="#{saupbalBean.supBal}"
+                                 >
+
+                        <f:facet name="header" >
+
+                            <h:commandLink >
+                                <p:graphicImage name="/images/excelx.png" width="24"/>
+                                <p:dataExporter type="xls" target="spls" fileName="suppliers" />
+                            </h:commandLink>
+
+                            <p:commandButton id="toggler" type="button" value="Columns" style="float:right" icon="ui-icon-calculator" />
+                            <p:columnToggler datasource="spls" trigger="toggler" />
+
+                        </f:facet>
+
+                        
+                        <p:ajax event="rowSelect" listener="#{saupbalBean.onRowSelect}"  update=":mform:msgs" />
+
+                        <p:column id="rn" headerText="rn" width="50" rendered="false" >
+                            <h:outputText value="#{supplier.id}"/>
+                        </p:column>                    
+
+                        <p:column id="company" headerText="Компания" width="150" >
+                            <h:outputText value="#{supplier.company}"/>
+                        </p:column>
+
+                        <p:column id="account" headerText="Счет" width="150" >
+                            <h:outputText value="#{supplier.account}"/>
+                        </p:column>
+
+                        <p:column id="analytics" headerText="Аналитика" width="150" >
+                            <h:outputText value="#{supplier.analytics}"/>
+                        </p:column>
+
+                        <p:column id="cfo" headerText="ЦФО" width="150" >
+                            <h:outputText value="#{supplier.cfo}"/>
+                        </p:column>
+
+                        <p:column id="mvp" headerText="МВП" width="150" >
+                            <h:outputText value="#{supplier.mvp}"/>
+                        </p:column>
+
+                        <p:column id="program" headerText="Программа" width="150" >
+                            <h:outputText value="#{supplier.program}"/>
+                        </p:column>
+
+                        <p:column id="service" headerText="Сервис" width="150" >
+                            <h:outputText value="#{supplier.service}"/>
+                        </p:column>
+
+                        <p:column id="sales" headerText="Продажи"  width="150">
+                            <h:outputText value="#{supplier.sales}"/>
+                        </p:column>
+
+                        <p:column id="interco" headerText="Интерко" width="150"  >
+                            <h:outputText value="#{supplier.interco}"/>
+                        </p:column>
+
+                        <p:column id="nu_gaap" headerText="НУ/ГААП" width="150" >
+                            <h:outputText value="#{supplier.nu_gaap}"/>
+                        </p:column>
+
+                        <p:column id="supplierName" headerText="Поставщик"  width="200"  >
+                            <h:outputText value="#{supplier.supplierName}"/>
+                        </p:column>
+
+                        <p:column id="supplierNumber" headerText="Номер" width="200">
+                            <h:outputText value="#{supplier.supplierNumber}"/>
+                        </p:column>
+
+                        <p:column id="supplierSite" headerText="Отделение" width="200">
+                            <h:outputText value="#{supplier.supplierSite}"/>
+                        </p:column>
+
+                        <p:column id="poNumber" headerText="ЗП" width="200">
+                            <h:outputText value="#{supplier.poNumber}"/>
+                        </p:column>
+                        <p:column id="agreement" headerText="Договор" width="200">
+                            <h:outputText value="#{supplier.agreement}"/>
+                        </p:column>
+
+                        <p:column id="docType" headerText="Тип док-та" width="200">
+                            <h:outputText value="#{supplier.docType}"/>
+                        </p:column>
+                        <p:column id="docNumber" headerText="Номер док-та" width="200">
+                            <h:outputText value="#{supplier.docNumber}"/>
+                        </p:column>
+
+                        <p:column id="docDate" headerText="Дата" width="100">
+                            <h:outputText value="#{supplier. docDate}"/>
+                        </p:column>
+                        <p:column id="currencyCode" headerText="Валюта" width="100">
+                            <h:outputText value="#{supplier.currencyCode}"/>
+                        </p:column>
+                        <p:column id="enteredDrBeg" headerText="Входящее сальдо Дт, Введ." width="200">
+                            <h:outputText value="#{supplier.enteredDrBeg}"/>
+                        </p:column>
+                        <p:column id="enteredCrBeg" headerText="Входящее сальдо Кт, Введ." width="200">
+                            <h:outputText value="#{supplier.enteredCrBeg}"/>
+                        </p:column>
+                        <p:column id="accountedDrBeg" headerText="Входящее сальдо Дт, функц." width="200">
+                            <h:outputText value="#{supplier.accountedDrBeg}"/>
+                        </p:column>
+                        <p:column id="accountedCrBeg" headerText="Входящее сальдо Кт, функц." width="200">
+                            <h:outputText value="#{supplier.accountedCrBeg}"/>
+                        </p:column>
+                        <p:column id="enteredDr" headerText="Введенный Дт, валюта" width="200">
+                            <h:outputText value="#{supplier.enteredDr}"/>
+                        </p:column>
+                        <p:column id="enteredCr" headerText="Введенный Кт, валюта" width="200">
+                            <h:outputText value="#{supplier.enteredCr}"/>
+                        </p:column>
+                        <p:column id="accountedDr" headerText="Пересчитанный Дт, функц.валюта" width="200">
+                            <h:outputText value="#{supplier.accountedDr}"/>
+                        </p:column>
+                        <p:column id="accountedCr" headerText="Пересчитанный Кт, функц.валюта" width="200">
+                            <h:outputText value="#{supplier.accountedCr}"/>
+                        </p:column>
+                        <p:column id="enteredDrEnd" headerText="Исходящее сальдо Дт, Введ." width="200">
+                            <h:outputText value="#{supplier.enteredDrEnd}"/>
+                        </p:column>
+                        <p:column id="enteredCrEnd" headerText="Исходящее сальдо Кт, Введ." width="200">
+                            <h:outputText value="#{supplier.enteredCrEnd}"/>
+                        </p:column>
+                        <p:column id="accountedDrEnd" headerText="Исходящее сальдо Дт, функц" width="200">
+                            <h:outputText value="#{supplier.accountedDrEnd}"/>
+                        </p:column>
+                        <p:column id="accountedCrEnd" headerText="Исходящее сальдо Кт, функц" width="200">
+                            <h:outputText value="#{supplier.accountedCrEnd}"/>
+                        </p:column>
+                        <p:column id="accountedBalEnd" headerText="Исходящее сальдо функц" width="200"
+                                  filterBy="#{supplier.accountedBalEnd}" filterFunction="#{saupbalBean.filterByEndBal}" >
+
+                            <f:facet name="header">
+                                <p:outputLabel for="filtermod" value="Filter:" />
+                                <p:selectOneRadio id="filtermod" layout="grid" columns="3" value="#{saupbalBean.comparatorType}">
+                                    <f:selectItem itemLabel="g" itemValue="gt" />
+                                    <f:selectItem itemLabel="l" itemValue="lt" />
+                                    <f:selectItem itemLabel="e" itemValue="eq" />
+                                </p:selectOneRadio>
+                            </f:facet>
+
+                            <h:outputText value="#{supplier.accountedBalEnd}">
+                                <f:convertNumber currencySymbol="" groupingUsed="false" type="currency"/>
+                            </h:outputText> 
+
+                        </p:column>
+                        
+                                                <p:columnGroup type="footer">
+                                                    <p:row>
+                                                        <p:column footerText="Totals: "  colspan="32" />
+                                                        <p:column  footerText="#{saupbalBean.tBal}" />   
+                                                    </p:row>
+                                                </p:columnGroup>
+                        
+<!--
+                        <p:summaryRow>
+                            <p:column colspan="32" style="text-align:right">
+                                <h:outputText value="Total:" />
+                            </p:column>
+                            <p:column>
+                                <h:outputText value="#{saupbalBean.tBal}">
+                                    <f:convertNumber type="currency" currencySymbol="" />
+                                </h:outputText>
+                            </p:column>
+                        </p:summaryRow>
+-->
+    <!--                    
+    <f:facet name="footer">
+        Total: #{bean.supBalList.stream().map(supplier->supplier.accountedBalEnd).sum()}
+    </f:facet>                        
+       -->                 
+                        
+                    </p:dataTable>  
+                    <p:blockUI block="spls" trigger="spls"   >
+                        LOADING<br />
+                        <p:graphicImage value="/resources/images/earth.gif" styleClass=".ui-blockui"/>
+                    </p:blockUI>
+
+                </h:form>    
+
+
+
+            </ui:define>
+        </ui:composition> 
+    </h:body>
+</html>
+
+
+

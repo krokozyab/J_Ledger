@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="J_Ledger:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="J_Ledger-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="J_Ledger:war exploded" />
+    </root>
+  </artifact>
+</component>

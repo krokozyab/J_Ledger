@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:pe="http://primefaces.org/ui/extensions">
+    <h:head>
+        <title>Facelet Title</title>
+
+
+    </h:head>
+
+    <h:body >
+        <!--  <f:metadata>
+              <f:viewAction action="#{rBean.populateAcStruct}"/>
+          </f:metadata> -->
+        <ui:composition  template="../WEB-INF/layout/template.xhtml"  >
+            
+              <ui:define name="head">
+        <style type="text/css">
+            .ui-panelgrid-content > * {
+                  box-sizing: border-box;
+                  -webkit-box-sizing: border-box;
+                  -moz-box-sizing: border-box;
+            }
+            .ui-datatable-hor-scroll .ui-datatable-tablewrapper,.scrolling-div .ui-datatable-tablewrapper{
+                overflow: auto;
+                width: 100%;
+                padding-bottom: 5px;}
+            
+            .myCalendar input{
+                width: 90%;
+            }
+            
+            @media (max-width: 960px) {
+                .ui-panelgrid .ui-panelgrid-content label {
+                    font-size: 13px !important;
+                }
+            }
+            p.label_field_pair {
+                clear: both;
+                float: none;
+            }
+            p.label_field_pair label {
+                clear: left;
+                display: block;
+                float: left;
+                text-align: right;
+                width: 100px;
+            }
+            p.label_field_pair input {
+                clear: right;
+                float: left;
+                margin-left: 10px;
+                width: 200px;
+            }
+        </style>
+    </ui:define>
+            
+            
+            <ui:define name="content"  >
+
+
+                <h:form id="outab">
+                    <p:ajaxStatus styleClass=".ui-blockui">
+                        <f:facet name="start">
+                            <h:graphicImage value="/resources/images/earth.gif" title="Loading..."  />                            
+                        </f:facet>
+                        <f:facet name="complete">
+                            <h:outputText value="" />
+                        </f:facet>
+                    </p:ajaxStatus>
+                    
+
+                    <p:dataTable id="sladrill" var="sladrill" value="#{rBean.tableDrill}" widgetVar="drillTable" filteredValue="#{rBean.filteredDrill}"  
+                                 tableStyle="width:auto" styleClass="ui-datatable-hor-scroll" 
+                                 reflow="true" rows="10" paginator="false"  >                    
+                        <f:facet name="header">
+                            Drill
+                            <h:commandLink>
+                                <p:graphicImage name="/images/excelx.png" width="24"/>
+                                <p:dataExporter type="xls" target="sladrill" fileName="exported" />
+                            </h:commandLink>
+                            <p:commandButton id="toggler" type="button" value="Columns"  icon="ui-icon-calculator" />
+                            <p:columnToggler datasource="sladrill" trigger="toggler" />
+                        </f:facet>
+                        
+                        <p:columns value="#{rBean.columns}" var="column" columnIndexVar="colIndex" sortCol="#{sbal[column.property]}" filterBy="#{sbal[column.property]}" style="min-width:100px">
+                            <f:facet name="header">
+                                <h:outputText value="#{column.header}" />
+                            </f:facet>
+                            <h:outputText value="#{sbal[column.property]}" />
+                        </p:columns>
+                    </p:dataTable>
+                    <p:blockUI block="sladrill" trigger="sladrill"   >
+                        LOADING<br />
+                        <p:graphicImage value="/resources/images/earth.gif" styleClass=".ui-blockui"/>
+                    </p:blockUI>
+                </h:form>
+
+            </ui:define>
+        </ui:composition> 
+    </h:body>
+</html>
+
