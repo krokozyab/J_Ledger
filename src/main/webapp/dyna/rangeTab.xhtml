@@ -208,7 +208,8 @@
                                 <p:inputSwitch id="padj" value="#{rBean.padj}"/>
                                 <h:outputText value="Segment value's help:" />
                                 <p:inputSwitch id="hlpsw" value="#{rBean.hlp}">
-                                    <p:ajax listener="#{rBean.hlpUpd}" update=":rform:rangeForm"/>
+                                    <p:ajax  update=":rform:rangeForm"/>
+                                    <!--listener="#{rBean.hlpUpd}"-->
                                 </p:inputSwitch>
                             </h:panelGrid>
 
@@ -321,7 +322,16 @@
 
                             </f:facet>
                             <!-- oncomplete="PF('drillDialog').show()" update=":outab:drillTab" process="bals"-->
-
+                            <!--p:summaryRow listener="#{rBean.onSummaryRow}">
+                                <p:column colspan="3" style="text-align:right">
+                                    <h:outputText value="Total:" />
+                                </p:column>
+                                <p:column>
+                                    <h:outputText value="#{rBean.randomPrice}">
+                                        <f:convertNumber type="currency" currencySymbol="$" />
+                                    </h:outputText>
+                                </p:column>
+                            </p:summaryRow-->
 
                         </p:dataTable>
 

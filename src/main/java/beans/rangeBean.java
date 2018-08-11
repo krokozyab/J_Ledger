@@ -6,12 +6,18 @@
 package beans;
 
 import coreobjects.*;
+import coreobjects.flexSegmentFacade;
+import coreobjects.tableDrill;
+import coreobjects.tableOut;
 import org.apache.commons.beanutils.BeanUtils;
 import org.apache.commons.lang.StringUtils;
 import org.apache.commons.lang.time.DateFormatUtils;
+import org.apache.openjpa.jdbc.kernel.exps.Math;
+import org.jboss.weld.exceptions.IllegalArgumentException;
 import org.primefaces.component.api.UIColumn;
 import org.primefaces.component.datatable.DataTable;
 import org.primefaces.context.RequestContext;
+import org.primefaces.el.ValueExpressionAnalyzer;
 import org.primefaces.event.data.SortEvent;
 import org.primefaces.extensions.model.dynaform.DynaFormControl;
 import org.primefaces.extensions.model.dynaform.DynaFormLabel;
@@ -19,17 +25,24 @@ import org.primefaces.extensions.model.dynaform.DynaFormModel;
 import org.primefaces.extensions.model.dynaform.DynaFormRow;
 import org.primefaces.model.LazyDataModel;
 import org.primefaces.model.SortOrder;
+//import scala.collection.immutable.List;
+//import scala.collection.mutable.StringBuilder;
 import service.TableHeaders;
 import service.results;
 import service.selectParts;
 
 import javax.annotation.PostConstruct;
 import javax.ejb.EJB;
+import javax.el.ELContext;
+import javax.el.ELResolver;
+import javax.el.ValueExpression;
+import javax.el.ValueReference;
 import javax.faces.application.FacesMessage;
 import javax.faces.component.UIComponent;
 import javax.faces.context.FacesContext;
 import javax.faces.view.ViewScoped;
 import javax.inject.Named;
+import javax.resource.spi.SecurityException;
 import java.io.Serializable;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
@@ -43,6 +56,8 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
+
+import static java.lang.StrictMath.random;
 
 //import coreoblects.glPeriodsFacade;
 //import coreoblects.tableOutFacade;
@@ -1173,8 +1188,6 @@ setTabIndex(0);
                                             ax = bx.getClass().getMethod("get" + StringUtils.capitalize(sortCol));
                                         } catch (NoSuchMethodException ex) {
                                             Logger.getLogger(rangeBean.class.getName()).log(Level.SEVERE, null, ex);
-                                        } catch (SecurityException ex) {
-                                            Logger.getLogger(rangeBean.class.getName()).log(Level.SEVERE, null, ex);
                                         }
 
                                         System.out.println("method: "+ax);
@@ -1212,8 +1225,6 @@ setTabIndex(0);
                                                 try {
                                                     dx = q.getClass().getMethod("getA" + (p + 1));
                                                 } catch (NoSuchMethodException ex1) {
-                                                    Logger.getLogger(rangeBean.class.getName()).log(Level.SEVERE, null, ex1);
-                                                } catch (SecurityException ex1) {
                                                     Logger.getLogger(rangeBean.class.getName()).log(Level.SEVERE, null, ex1);
                                                 }
                                                 System.out.println("getA" + (p + 1));
@@ -1711,6 +1722,42 @@ setTabIndex(3);
         //return DateFormatUtils.ISO_DATE_FORMAT.format(c);
         //return new SimpleDateFormat("dd-MM-yyyy").format(myDate);
         return DateFormatUtils.format(myDate, "dd-MM-yyyy");
+    }
+
+
+
+    public int getRandomPrice() {
+        return (int) (random() * 100000);
+    }
+    public void onSummaryRow(Object filter)
+    {
+        FacesContext facesContext = FacesContext.getCurrentInstance();
+        ELContext elContext = facesContext.getELContext();
+        ELResolver elResolver = elContext.getELResolver();
+
+        DataTable table = (DataTable) UIComponent.getCurrentComponent(facesContext);
+
+        UIColumn sortColumn = table.getSortColumn();
+        ValueExpression expression = sortColumn.getValueExpression("sortBy");
+        ValueReference reference = ValueExpressionAnalyzer.getReference(elContext, expression);
+        String property = (String) reference.getProperty();
+
+        int total = 0;
+        List<?> rowList = (List<?>) table.getValue();
+        for(Object row : rowList)
+        {
+            Object value = elResolver.getValue(elContext, row, property);
+            if(filter.equals(value))
+            {
+                // THIS IS THE ONLY POINT TO CUSTOMIZE
+                System.out.println(property);
+
+            }
+        }
+
+        List<UIComponent> children = table.getSummaryRow().getChildren();
+        UIComponent column = children.get(children.size() - 1);
+        column.getAttributes().put("total", total);
     }
 
 

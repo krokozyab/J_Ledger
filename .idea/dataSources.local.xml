@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="@cis-tst-ora3.eco.mmk.chel.su" uuid="200ed204-1ad1-47fc-9a89-2c06a21a802f">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <secret-storage>master_key</secret-storage>
+      <first-sync>true</first-sync>
+      <user-name>apps</user-name>
+    </data-source>
+  </component>
+</project>

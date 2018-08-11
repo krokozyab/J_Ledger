@@ -114,8 +114,6 @@ public List<String> getPivot(String setId, String where){
     .append(where)
     .append("and rownum<90")
     .append("order by flex_value");
-        // System.out.println("pvn____________");
-    //System.out.println(qry.toString());
     return  (List<String>)em.createNativeQuery(qry.toString()).getResultList();
 }
      

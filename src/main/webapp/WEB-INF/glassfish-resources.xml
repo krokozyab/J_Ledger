@@ -53,12 +53,12 @@
     <jdbc-resource enabled="true" jndi-name="java:app/Ledger" object-type="user" pool-name="18pool"/>
 
     <jdbc-connection-pool allow-non-component-callers="false" associate-with-thread="false" connection-creation-retry-attempts="0" connection-creation-retry-interval-in-seconds="10" connection-leak-reclaim="false" connection-leak-timeout-in-seconds="0" connection-validation-method="auto-commit" datasource-classname="oracle.jdbc.pool.OracleDataSource" fail-all-connections="false" idle-timeout-in-seconds="300" is-connection-validation-required="false" is-isolation-level-guaranteed="true" lazy-connection-association="false" lazy-connection-enlistment="false" match-connections="false" max-connection-usage-count="0" max-pool-size="32" max-wait-time-in-millis="60000" name="Ypool" non-transactional-connections="false" pool-resize-quantity="2" res-type="javax.sql.DataSource" statement-timeout-in-seconds="-1" steady-pool-size="8" validate-atmost-once-period-in-seconds="0" wrap-jdbc-objects="false">
-        <property name="serverName" value="ebs.example.com"/>
-        <property name="portNumber" value="1531"/>
-        <property name="databaseName" value="CLONE21H"/>
+        <property name="serverName" value="astrolog.eco.mmk.chel.su"/>
+        <property name="portNumber" value="1521"/>
+        <property name="databaseName" value="VIS"/>
         <property name="User" value="apps"/>
         <property name="Password" value="apps"/>
-        <property name="URL" value="jdbc:oracle:thin:@apps21h-dev.oebs.yandex.net:1531:CLONE21H"/>
+        <property name="URL" value="jdbc:oracle:thin:@astrolog.eco.mmk.chel.su:1521:VIS"/>
         <property name="driverClass" value="oracle.jdbc.OracleDriver"/>
     </jdbc-connection-pool>
     <jdbc-resource enabled="true" jndi-name="java:app/Y21" object-type="user" pool-name="Ypool"/>

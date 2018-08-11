@@ -1,8 +1,413 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="J_Ledger:war" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="498b3d9b-612e-4fe3-ab5d-ce18a0ac4f54" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/coreobjects/sobStructFacade.java" afterPath="$PROJECT_DIR$/src/main/java/coreobjects/sobStructFacade.java" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/J_Ledger_war.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/J_Ledger_war.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/J_Ledger_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/J_Ledger_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_2_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_2_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_rxjava_rxjava_core_0_20_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_faces_jsf_api_2_0_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_faces_jsf_api_2_0_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_faces_jsf_impl_2_0_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_mail_javax_mail_1_5_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_mail_javax_mail_1_5_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_twelvemonkeys_common_common_lang_3_2_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_20030211_134440.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_20030211_134440.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_pool_commons_pool_1_5_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_pool_commons_pool_1_5_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_activation_1_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_activation_1_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_javaee_api_7_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_javaee_api_7_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_javaee_web_api_7_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_javaee_web_api_7_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_stream_stax_api_1_0_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_stream_stax_api_1_0_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_3_8_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_3_8_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_sourceforge_serp_serp_1_15_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sourceforge_serp_serp_1_15_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_ant_ant_1_8_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_ant_ant_1_8_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_ant_ant_launcher_1_8_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_ant_ant_launcher_1_8_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_geronimo_specs_geronimo_jms_1_1_spec_1_1_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_geronimo_specs_geronimo_jms_1_1_spec_1_1_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_geronimo_specs_geronimo_jpa_2_0_spec_1_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_geronimo_specs_geronimo_jpa_2_0_spec_1_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_geronimo_specs_geronimo_jta_1_1_spec_1_1_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_geronimo_specs_geronimo_jta_1_1_spec_1_1_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_openjpa_openjpa_2_4_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_openjpa_openjpa_2_4_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_openjpa_openjpa_jdbc_2_4_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_openjpa_openjpa_jdbc_2_4_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_openjpa_openjpa_jest_2_4_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_openjpa_openjpa_jest_2_4_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_openjpa_openjpa_kernel_2_4_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_openjpa_openjpa_kernel_2_4_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_openjpa_openjpa_lib_2_4_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_openjpa_openjpa_lib_2_4_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_openjpa_openjpa_persistence_2_4_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_openjpa_openjpa_persistence_2_4_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_openjpa_openjpa_persistence_jdbc_2_4_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_openjpa_openjpa_persistence_jdbc_2_4_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_3_13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_excelant_3_13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_ooxml_3_13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_ooxml_schemas_3_13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xbean_xbean_asm5_shaded_3_17.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xbean_xbean_asm5_shaded_3_17.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlbeans_xmlbeans_2_6_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlbeans_xmlbeans_2_6_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_persistence_commonj_sdo_2_1_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_persistence_commonj_sdo_2_1_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_persistence_eclipselink_2_5_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_persistence_eclipselink_2_5_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_persistence_javax_persistence_2_1_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_persistence_javax_persistence_2_1_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_grlea_log_simple_log_1_7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_grlea_log_simple_log_1_7.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_primefaces_extensions_primefaces_extensions_4_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_primefaces_primefaces_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_primefaces_themes_all_themes_1_0_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_site_1_7_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__stax_stax_api_1_0_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__stax_stax_api_1_0_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/J_Ledger.iml" beforeDir="false" afterPath="$PROJECT_DIR$/J_Ledger.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/J_Ledger.txt" beforeDir="false" afterPath="$PROJECT_DIR$/J_Ledger.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/titan-theme-1.1.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/lib/titan-theme-1.1.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nb-configuration.xml" beforeDir="false" afterPath="$PROJECT_DIR$/nb-configuration.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nb_jr_remoting.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/nb_jr_remoting.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbproject/faces-config.NavData" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/faces-config.NavData" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbproject/project.properties" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/project.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/beans/Applic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/beans/Applic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/beans/CarService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/beans/CarService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/beans/DateFormatUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/beans/DateFormatUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/beans/ExporterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/beans/ExporterController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/beans/SummaryRowView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/beans/SummaryRowView.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/beans/baLov.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/beans/baLov.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/beans/exceptions/IllegalOrphanException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/beans/exceptions/IllegalOrphanException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/beans/exceptions/NonexistentEntityException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/beans/exceptions/NonexistentEntityException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/beans/exceptions/PreexistingEntityException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/beans/exceptions/PreexistingEntityException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/beans/exceptions/RollbackFailureException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/beans/exceptions/RollbackFailureException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/beans/jbaLov.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/beans/jbaLov.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/beans/jeBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/beans/jeBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/beans/rangeBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/beans/rangeBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/beans/structBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/beans/structBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/convert/applConverted.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/convert/applConverted.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/convert/ledgerConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/convert/ledgerConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/convert/periodConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/convert/periodConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/convert/pivotConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/convert/pivotConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/coreobjects/AbstractFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coreobjects/AbstractFacade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/coreobjects/balanceType.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coreobjects/balanceType.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/coreobjects/descripz.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coreobjects/descripz.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/coreobjects/drillConditions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coreobjects/drillConditions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/coreobjects/dtButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coreobjects/dtButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/coreobjects/dynaFields.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coreobjects/dynaFields.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/coreobjects/eApplication.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coreobjects/eApplication.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/coreobjects/flexSegment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coreobjects/flexSegment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/coreobjects/flexSegmentFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coreobjects/flexSegmentFacade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/coreobjects/getSegRange.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coreobjects/getSegRange.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/coreobjects/glPeriods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coreobjects/glPeriods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/coreobjects/helpSegProperty.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coreobjects/helpSegProperty.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/coreobjects/jeHeader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coreobjects/jeHeader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/coreobjects/jeLines.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coreobjects/jeLines.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/coreobjects/ledgers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coreobjects/ledgers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/coreobjects/pivot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coreobjects/pivot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/coreobjects/rangeProperty.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coreobjects/rangeProperty.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/coreobjects/segRange.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coreobjects/segRange.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/coreobjects/sgv.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coreobjects/sgv.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/coreobjects/slaLines.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coreobjects/slaLines.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/coreobjects/sobStruct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coreobjects/sobStruct.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/coreobjects/sobStructFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coreobjects/sobStructFacade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/coreobjects/suppliers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coreobjects/suppliers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/coreobjects/suppliersBal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coreobjects/suppliersBal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/coreobjects/suppliersBalFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coreobjects/suppliersBalFacade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/coreobjects/suppliersFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coreobjects/suppliersFacade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/coreobjects/tableDrill.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coreobjects/tableDrill.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/coreobjects/tableOut.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coreobjects/tableOut.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jsf/MainViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jsf/MainViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/TableHeaders.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/TableHeaders.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/beanSets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/beanSets.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/results.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/results.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/selectParts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/selectParts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlets/LogFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlets/LogFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/META-INF/orm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/META-INF/orm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/faces-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/faces-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/footer.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/footer.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/glassfish-resources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/glassfish-resources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/layout/template.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/layout/template.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/layoutmenu.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/layoutmenu.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/titan-theme-1.1.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/titan-theme-1.1.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/sun-web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/sun-web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/template.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/template.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/topbar.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/topbar.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/weblogic.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/weblogic.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/dyna/drill.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dyna/drill.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/dyna/glJournal.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dyna/glJournal.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/dyna/rangeTab.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dyna/rangeTab.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/dyna/sumrow.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dyna/sumrow.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/empty-page.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/empty-page.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/less/layout/titan-layout.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/less/layout/titan-layout.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/less/variables/layout-variables.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/less/variables/layout-variables.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/cssLayout.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/cssLayout.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/default.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/default.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/images/Excel-icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/Excel-icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/images/earth.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/earth.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/images/excel.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/excel.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/images/excelx.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/excelx.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/css/animate.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/css/animate.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/css/core-layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/css/core-layout.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/css/font-awesome.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/css/font-awesome.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/css/titan-font.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/css/titan-font.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/css/titan-layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/css/titan-layout.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/fonts/FontAwesome.otf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/fonts/FontAwesome.otf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/fonts/Titan.eot" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/fonts/Titan.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/fonts/Titan.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/fonts/Titan.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/fonts/Titan.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/fonts/Titan.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/fonts/Titan.woff" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/fonts/Titan.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/fonts/fontawesome-webfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/fonts/fontawesome-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/fonts/fontawesome-webfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/fonts/fontawesome-webfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/fonts/fontawesome-webfont.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/fonts/merriweather-bold-webfont-webfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/fonts/merriweather-bold-webfont-webfont.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/fonts/merriweather-bold-webfont-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/fonts/merriweather-bold-webfont-webfont.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/fonts/merriweather-bold-webfont-webfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/fonts/merriweather-bold-webfont-webfont.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/fonts/merriweather-bold-webfont-webfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/fonts/merriweather-bold-webfont-webfont.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/fonts/merriweather-bold-webfont-webfont.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/fonts/merriweather-bold-webfont-webfont.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/fonts/merriweather-italic-webfont-webfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/fonts/merriweather-italic-webfont-webfont.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/fonts/merriweather-italic-webfont-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/fonts/merriweather-italic-webfont-webfont.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/fonts/merriweather-italic-webfont-webfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/fonts/merriweather-italic-webfont-webfont.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/fonts/merriweather-italic-webfont-webfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/fonts/merriweather-italic-webfont-webfont.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/fonts/merriweather-italic-webfont-webfont.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/fonts/merriweather-italic-webfont-webfont.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/fonts/merriweather-light-webfont-webfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/fonts/merriweather-light-webfont-webfont.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/fonts/merriweather-light-webfont-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/fonts/merriweather-light-webfont-webfont.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/fonts/merriweather-light-webfont-webfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/fonts/merriweather-light-webfont-webfont.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/fonts/merriweather-light-webfont-webfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/fonts/merriweather-light-webfont-webfont.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/fonts/merriweather-light-webfont-webfont.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/fonts/merriweather-light-webfont-webfont.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/fonts/merriweather-regular-webfont-webfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/fonts/merriweather-regular-webfont-webfont.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/fonts/merriweather-regular-webfont-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/fonts/merriweather-regular-webfont-webfont.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/fonts/merriweather-regular-webfont-webfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/fonts/merriweather-regular-webfont-webfont.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/fonts/merriweather-regular-webfont-webfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/fonts/merriweather-regular-webfont-webfont.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/fonts/merriweather-regular-webfont-webfont.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/fonts/merriweather-regular-webfont-webfont.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/fonts/sourcesanspro-bold-webfont-webfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/fonts/sourcesanspro-bold-webfont-webfont.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/fonts/sourcesanspro-bold-webfont-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/fonts/sourcesanspro-bold-webfont-webfont.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/fonts/sourcesanspro-bold-webfont-webfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/fonts/sourcesanspro-bold-webfont-webfont.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/fonts/sourcesanspro-bold-webfont-webfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/fonts/sourcesanspro-bold-webfont-webfont.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/fonts/sourcesanspro-bold-webfont-webfont.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/fonts/sourcesanspro-bold-webfont-webfont.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/fonts/sourcesanspro-italic-webfont-webfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/fonts/sourcesanspro-italic-webfont-webfont.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/fonts/sourcesanspro-italic-webfont-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/fonts/sourcesanspro-italic-webfont-webfont.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/fonts/sourcesanspro-italic-webfont-webfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/fonts/sourcesanspro-italic-webfont-webfont.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/fonts/sourcesanspro-italic-webfont-webfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/fonts/sourcesanspro-italic-webfont-webfont.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/fonts/sourcesanspro-italic-webfont-webfont.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/fonts/sourcesanspro-italic-webfont-webfont.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/fonts/sourcesanspro-light-webfont-webfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/fonts/sourcesanspro-light-webfont-webfont.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/fonts/sourcesanspro-light-webfont-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/fonts/sourcesanspro-light-webfont-webfont.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/fonts/sourcesanspro-light-webfont-webfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/fonts/sourcesanspro-light-webfont-webfont.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/fonts/sourcesanspro-light-webfont-webfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/fonts/sourcesanspro-light-webfont-webfont.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/fonts/sourcesanspro-light-webfont-webfont.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/fonts/sourcesanspro-light-webfont-webfont.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/fonts/sourcesanspro-regular-webfont-webfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/fonts/sourcesanspro-regular-webfont-webfont.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/fonts/sourcesanspro-regular-webfont-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/fonts/sourcesanspro-regular-webfont-webfont.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/fonts/sourcesanspro-regular-webfont-webfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/fonts/sourcesanspro-regular-webfont-webfont.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/fonts/sourcesanspro-regular-webfont-webfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/fonts/sourcesanspro-regular-webfont-webfont.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/fonts/sourcesanspro-regular-webfont-webfont.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/fonts/sourcesanspro-regular-webfont-webfont.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/all-doc.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/all-doc.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/arrow-double-left.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/arrow-double-left.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/arrow-double-right.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/arrow-double-right.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/arrow-down.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/arrow-down.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/arrow-left-white.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/arrow-left-white.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/arrow-left.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/arrow-left.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/arrow-right-white.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/arrow-right-white.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/arrow-right.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/arrow-right.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/background.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/background.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/blank-active.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/blank-active.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/blank.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/blank.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/blue-background.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/blue-background.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/bottomarrow.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/bottomarrow.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/bottomleftarrow.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/bottomleftarrow.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/bottomrightarrow.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/bottomrightarrow.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/breadcrumb-arrow.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/breadcrumb-arrow.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/breadcrumb-home.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/breadcrumb-home.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/calendar.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/calendar.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/chart.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/chart.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/chart2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/chart2.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/chartmini.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/chartmini.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/check-blue.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/check-blue.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/check-gray.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/check-gray.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/check-white.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/check-white.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/check.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/check.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/clear.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/clear.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/debug-gray.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/debug-gray.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/debug.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/debug.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/default.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/default.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/delete-blue.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/delete-blue.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/delete-gray.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/delete-gray.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/delete-green.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/delete-green.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/delete-navy.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/delete-navy.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/delete-orange.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/delete-orange.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/delete-pink.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/delete-pink.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/delete-red.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/delete-red.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/delete-soft-blue.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/delete-soft-blue.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/delete-softblue.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/delete-softblue.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/delete-white.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/delete-white.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/delete.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/delete.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/dislike-on.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/dislike-on.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/dislike.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/dislike.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/document-gray.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/document-gray.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/document-navy.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/document-navy.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/downarrow-blue.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/downarrow-blue.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/downarrow-gray.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/downarrow-gray.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/downarrow-navy.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/downarrow-navy.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/downarrow-red.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/downarrow-red.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/downarrow-white.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/downarrow-white.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/downarrow.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/downarrow.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/error-gray.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/error-gray.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/error.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/error.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/expand-gray.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/expand-gray.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/external-gray-revert.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/external-gray-revert.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/external-gray.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/external-gray.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/fakechart.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/fakechart.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/fakedropdown.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/fakedropdown.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/fakeschedule.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/fakeschedule.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/folder-close-gray.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/folder-close-gray.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/folder-close-navy.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/folder-close-navy.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/folder-open-gray.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/folder-open-gray.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/folder-open-navy.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/folder-open-navy.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/folder-open.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/folder-open.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/gear-gray.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/gear-gray.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/gear-navy.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/gear-navy.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/gear.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/gear.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/handle-gray.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/handle-gray.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/image-gray.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/image-gray.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/image-navy.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/image-navy.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/info-blue.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/info-blue.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/info-gray.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/info-gray.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/info.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/info.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/left-arrow-white.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/left-arrow-white.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/left-arrow.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/left-arrow.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/left-double-arrow-for-data.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/left-double-arrow-for-data.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/left-end-arrow.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/left-end-arrow.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/left-one-arrow-for-data.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/left-one-arrow-for-data.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/left-right-arrow-gray.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/left-right-arrow-gray.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/leftarrow-gray.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/leftarrow-gray.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/leftarrow-navy.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/leftarrow-navy.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/loginback.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/loginback.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/logo2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/logo2.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/macbook.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/macbook.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/menu-dots.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/menu-dots.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/menulinkDashedLine.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/menulinkDashedLine.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/minus-sign-gray.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/minus-sign-gray.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/minus-sign-navy.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/minus-sign-navy.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/minus-sign-white.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/minus-sign-white.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/minus-sign.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/minus-sign.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/minus.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/minus.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/move-gray.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/move-gray.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/move-white.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/move-white.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/movearrow-gray.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/movearrow-gray.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/music-gray.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/music-gray.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/music-navy.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/music-navy.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/note-gray.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/note-gray.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/note-navy.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/note-navy.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/note.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/note.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/orange-background.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/orange-background.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/password-meter.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/password-meter.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/pen-blue.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/pen-blue.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/pen-gray.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/pen-gray.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/plus-sign-gray.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/plus-sign-gray.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/plus-sign-navy.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/plus-sign-navy.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/plus-sign-white.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/plus-sign-white.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/plus-sign.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/plus-sign.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/plus.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/plus.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/progressbar-back.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/progressbar-back.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/radio-on.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/radio-on.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/red-background.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/red-background.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/right-arrow-white.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/right-arrow-white.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/right-arrow.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/right-arrow.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/right-double-arrow-for-data.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/right-double-arrow-for-data.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/right-end-arrow.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/right-end-arrow.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/right-one-arrow-for-data.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/right-one-arrow-for-data.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/rightarrow-gray.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/rightarrow-gray.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/rightarrow-navy.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/rightarrow-navy.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/search-icon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/search-icon.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/searchicon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/searchicon.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/slider-handle-dots-blue.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/slider-handle-dots-blue.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/slider-handle-dots-orange.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/slider-handle-dots-orange.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/slider-handle-dots-red.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/slider-handle-dots-red.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/slider-handle-dots.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/slider-handle-dots.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/star-on.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/star-on.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/star.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/star.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/toparrow.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/toparrow.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/treenode-dots-gray.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/treenode-dots-gray.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/treenode-gray.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/treenode-gray.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/triangle-blue.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/triangle-blue.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/triangle-cyan.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/triangle-cyan.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/triangle-gray.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/triangle-gray.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/triangle-indigo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/triangle-indigo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/triangle-red.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/triangle-red.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/ui-bg_diagonals-small_0_aaaaaa_40x40.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/ui-bg_diagonals-small_0_aaaaaa_40x40.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/ui-bg_diagonals-thick_15_444444_40x40.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/ui-bg_diagonals-thick_15_444444_40x40.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/ui-bg_diagonals-thick_95_ffdc2e_40x40.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/ui-bg_diagonals-thick_95_ffdc2e_40x40.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/ui-bg_glass_55_fbf5d0_1x400.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/ui-bg_glass_55_fbf5d0_1x400.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/ui-bg_highlight-hard_30_285c00_1x100.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/ui-bg_highlight-hard_30_285c00_1x100.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/ui-bg_highlight-soft_33_3a8104_1x100.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/ui-bg_highlight-soft_33_3a8104_1x100.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/ui-bg_highlight-soft_50_4eb305_1x100.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/ui-bg_highlight-soft_50_4eb305_1x100.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/ui-bg_highlight-soft_60_4ca20b_1x100.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/ui-bg_highlight-soft_60_4ca20b_1x100.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/ui-bg_inset-soft_10_285c00_1x100.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/ui-bg_inset-soft_10_285c00_1x100.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/ui-growl-icon-close.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/ui-growl-icon-close.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/ui-growl-image-error.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/ui-growl-image-error.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/ui-icon-info.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/ui-icon-info.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/ui-icon-note.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/ui-icon-note.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/ui-icon-note_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/ui-icon-note_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/ui-icon-refresh.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/ui-icon-refresh.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/ui-icon-trash.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/ui-icon-trash.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/ui-icon-triangle-1-s.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/ui-icon-triangle-1-s.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/ui-icons_4eb305_256x240.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/ui-icons_4eb305_256x240.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/ui-icons_72b42d_256x240.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/ui-icons_72b42d_256x240.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/ui-icons_cd0a0a_256x240.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/ui-icons_cd0a0a_256x240.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/ui-icons_ffffff_256x240.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/ui-icons_ffffff_256x240.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/ui-messages-error-icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/ui-messages-error-icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/ui-messages-error-icon2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/ui-messages-error-icon2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/ui-messages-info-icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/ui-messages-info-icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/uparrow-blue.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/uparrow-blue.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/uparrow-gray.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/uparrow-gray.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/uparrow-navy.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/uparrow-navy.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/uparrow-red.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/uparrow-red.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/uparrow.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/uparrow.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/updown-arrow.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/updown-arrow.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/updown-gray-arrow.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/updown-gray-arrow.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/updown-navy-arrow-softgreen.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/updown-navy-arrow-softgreen.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/updown-navy-arrow-white.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/updown-navy-arrow-white.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/updown-navy-arrow.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/updown-navy-arrow.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/upleftarrow.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/upleftarrow.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/upload-gray.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/upload-gray.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/upload.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/upload.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/uprightarrow.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/uprightarrow.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/video-gray.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/video-gray.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/video-navy.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/video-navy.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/warn-blue.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/warn-blue.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/warn-gray.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/warn-gray.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/warn-hardal.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/warn-hardal.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/warn-pink.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/warn-pink.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/warn-red.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/warn-red.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/warn.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/warn.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/widechart.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/widechart.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/widechart2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/images/widechart2.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/js/equalize.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/js/equalize.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/js/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/titan-layout/js/layout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/welcomePrimefaces.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/welcomePrimefaces.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/beans/Ledger_Bean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/beans/Ledger_Bean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/beans/dynaForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/beans/dynaForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/beans/suppliersJpaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/beans/suppliersJpaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/beans/suppliersJpaController1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/beans/suppliersJpaController1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/coreoblects/glPeriodsFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/coreoblects/glPeriodsFacade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/coreoblects/ledgersFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/coreoblects/ledgersFacade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/coreoblects/sobStructFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/coreoblects/sobStructFacade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/coreoblects/structBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/coreoblects/structBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/coreoblects/tableOutFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/coreoblects/tableOutFacade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/supbalBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/supbalBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/webold/dyna.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/webold/dyna.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/webold/ledgers.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/webold/ledgers.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/webold/supBal.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/webold/supBal.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/webold/suppliers.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/webold/suppliers.xhtml" afterDir="false" />
     </list>
     <ignored path="J_Ledger.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -14,102 +419,99 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="FavoritesManager">
     <favorites_list name="J_Ledger" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="supbalBean.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/beans/supbalBean.java">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="28" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
-              <folding>
-                <element signature="e#0#5547#0" expanded="false" />
-                <element signature="imports" expanded="false" />
-                <element signature="e#2052#2053#0" expanded="false" />
-                <element signature="e#2080#2081#0" expanded="false" />
-                <element signature="e#2195#2196#0" expanded="false" />
-                <element signature="e#2229#2230#0" expanded="false" />
-                <element signature="e#2310#2311#0" expanded="false" />
-                <element signature="e#2339#2340#0" expanded="false" />
-                <element signature="e#2444#2445#0" expanded="false" />
-                <element signature="e#2480#2481#0" expanded="false" />
-                <element signature="e#2575#2576#0" expanded="false" />
-                <element signature="e#2608#2609#0" expanded="false" />
-                <element signature="e#2735#2736#0" expanded="false" />
-                <element signature="e#2779#2780#0" expanded="false" />
-                <element signature="e#2867#2868#0" expanded="false" />
-                <element signature="e#2898#2899#0" expanded="false" />
-                <element signature="e#3014#3015#0" expanded="false" />
-                <element signature="e#3054#3055#0" expanded="false" />
-                <element signature="e#3374#3375#0" expanded="false" />
-                <element signature="e#3418#3419#0" expanded="false" />
-                <element signature="e#3516#3517#0" expanded="false" />
-                <element signature="e#3552#3553#0" expanded="false" />
-                <element signature="e#3688#3689#0" expanded="false" />
-                <element signature="e#3738#3739#0" expanded="false" />
-                <element signature="e#4412#4413#0" expanded="false" />
-                <element signature="e#4449#4450#0" expanded="false" />
-                <element signature="e#4580#4581#0" expanded="false" />
-                <element signature="e#4632#4633#0" expanded="false" />
-                <element signature="e#4667#4668#0" expanded="false" />
-                <element signature="e#4698#4699#0" expanded="false" />
-                <element signature="e#4746#4747#0" expanded="false" />
-                <element signature="e#4786#4787#0" expanded="false" />
-                <element signature="e#4821#4822#0" expanded="false" />
-                <element signature="e#4854#4855#0" expanded="false" />
-                <element signature="e#4898#4899#0" expanded="false" />
-                <element signature="e#4930#4931#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="679">
+              <caret line="52" column="44" selection-start-line="52" selection-start-column="44" selection-end-line="52" selection-end-column="44" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.xhtml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/index.xhtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
-              <folding>
-                <marker date="1458592289000" expanded="true" signature="204:1637" placeholder="..." />
-                <marker date="1458592289000" expanded="true" signature="462:722" placeholder="..." />
-                <marker date="1458592289000" expanded="true" signature="520:699" placeholder="..." />
-                <marker date="1458592289000" expanded="true" signature="1455:1483" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="persistence.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="persistence.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.06320225">
-              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="45">
+              <caret line="3" column="33" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="33" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dynaForm.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/beans/dynaForm.java">
+      <file leaf-file-name="rangeTab.xhtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/dyna/rangeTab.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="107" column="30" selection-start-line="107" selection-start-column="30" selection-end-line="107" selection-end-column="30" />
-              <folding>
-                <element signature="e#0#5447#0" expanded="false" />
-                <marker date="1458593113000" expanded="true" signature="4958:5436" placeholder="{...}" />
-              </folding>
+            <state relative-caret-position="3210">
+              <caret line="214" selection-start-line="214" selection-end-line="214" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1035">
+              <caret line="69" selection-start-line="69" selection-end-line="69" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="rangeBean.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/beans/rangeBean.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="6795">
+              <caret line="513" selection-start-line="513" selection-end-line="513" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LogFilter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/servlets/LogFilter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="525">
+              <caret line="42" selection-start-line="42" selection-end-line="42" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>tita</find>
+      <find>selectedLe</find>
+      <find>completeLedger</find>
+      <find>scopeChanged</find>
+      <find>tableBal</find>
+      <find>selectedRange</find>
+      <find>update</find>
+      <find>tableOut</find>
+      <find>laz</find>
+      <find>drill</find>
+      <find>java:app/Y21</find>
+      <find>hlp</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -120,113 +522,123 @@
         <option value="$PROJECT_DIR$/src/main/java/beans/supbalBean.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.xhtml" />
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/coreobjects/flexSegmentFacade.java" />
+        <option value="$PROJECT_DIR$/src/main/java/beans/rangeBean.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/glassfish-resources.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/dyna/rangeTab.xhtml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" />
-  <component name="JsBuildToolPackageJson" detection-done="true" />
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
   </component>
   <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="mavenHome" value="Bundled (Maven 3)" />
-      </MavenGeneralSettings>
-    </option>
     <option name="importingSettings">
       <MavenImportingSettings>
         <option name="importAutomatically" value="true" />
       </MavenImportingSettings>
     </option>
   </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="20" />
-    <option name="y" value="43" />
+    <option name="x" value="107" />
+    <option name="y" value="284" />
     <option name="width" value="1400" />
     <option name="height" value="833" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
-    <OptionsSetting value="true" id="Add" />
-    <OptionsSetting value="true" id="Remove" />
-    <OptionsSetting value="true" id="Checkout" />
-    <OptionsSetting value="true" id="Update" />
-    <OptionsSetting value="true" id="Status" />
-    <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
-    <ConfirmationsSetting value="0" id="Remove" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
-      <flattenPackages />
-      <showMembers />
-      <showModules />
-      <showLibraryContents />
-      <hideEmptyPackages />
-      <abbreviatePackageNames />
-      <autoscrollToSource />
-      <autoscrollFromSource />
-      <sortByType />
-      <manualOrder />
+    <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="J_Ledger" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
+          <expand>
+            <path>
+              <item name="J_Ledger" type="b2602c69:ProjectViewProjectNode" />
+              <item name="J_Ledger" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="J_Ledger" type="b2602c69:ProjectViewProjectNode" />
+              <item name="J_Ledger" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="J_Ledger" type="b2602c69:ProjectViewProjectNode" />
+              <item name="J_Ledger" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="J_Ledger" type="b2602c69:ProjectViewProjectNode" />
+              <item name="J_Ledger" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="J_Ledger" type="b2602c69:ProjectViewProjectNode" />
+              <item name="J_Ledger" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="dyna" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="Oracle" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
-    <property name="project.structure.last.edited" value="SDKs" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.492569" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
-      <module name="" />
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
-      <option name="PROGRAM_PARAMETERS" />
-      <method />
-    </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <module />
-      <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
-      <method />
     </configuration>
     <configuration default="true" type="ArquillianJUnit" factoryName="">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
@@ -241,18 +653,13 @@
       <option name="VM_PARAMETERS" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" />
-      <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
         <value defaultName="singleModule" />
       </option>
-      <envs />
       <patterns />
-      <method />
     </configuration>
     <configuration default="true" type="ArquillianTestNG" factoryName="">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
@@ -270,90 +677,87 @@
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" />
       <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
         <value defaultName="singleModule" />
       </option>
       <option name="USE_DEFAULT_REPORTERS" value="false" />
       <option name="PROPERTIES_FILE" />
-      <envs />
       <properties />
       <listeners />
-      <method />
     </configuration>
-    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="myFilePath" />
-      <option name="GLUE" />
-      <option name="myNameFilter" />
-      <option name="myGeneratedName" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
-      <option name="BCName" value="" />
-      <option name="IOSSimulatorSdkPath" value="" />
-      <option name="adlOptions" value="" />
-      <option name="airProgramParameters" value="" />
-      <option name="appDescriptorForEmulator" value="Android" />
-      <option name="debugTransport" value="USB" />
-      <option name="debuggerSdkRaw" value="BC SDK" />
-      <option name="emulator" value="NexusOne" />
-      <option name="emulatorAdlOptions" value="" />
-      <option name="fastPackaging" value="true" />
-      <option name="fullScreenHeight" value="0" />
-      <option name="fullScreenWidth" value="0" />
-      <option name="launchUrl" value="false" />
-      <option name="launcherParameters">
-        <LauncherParameters>
-          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
-          <option name="launcherType" value="OSDefault" />
-          <option name="newPlayerInstance" value="false" />
-          <option name="playerPath" value="/Applications/Flash Player Debugger.app" />
-        </LauncherParameters>
-      </option>
-      <option name="mobileRunTarget" value="Emulator" />
-      <option name="moduleName" value="" />
-      <option name="overriddenMainClass" value="" />
-      <option name="overriddenOutputFileName" value="" />
-      <option name="overrideMainClass" value="false" />
-      <option name="runTrusted" value="true" />
-      <option name="screenDpi" value="0" />
-      <option name="screenHeight" value="0" />
-      <option name="screenWidth" value="0" />
-      <option name="url" value="http://" />
-      <option name="usbDebugPort" value="7936" />
-      <method />
-    </configuration>
-    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" package_name="" scope="Class">
-      <option name="BCName" value="" />
-      <option name="launcherParameters">
-        <LauncherParameters>
-          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
-          <option name="launcherType" value="OSDefault" />
-          <option name="newPlayerInstance" value="false" />
-          <option name="playerPath" value="/Applications/Flash Player Debugger.app" />
-        </LauncherParameters>
-      </option>
-      <option name="moduleName" value="" />
-      <option name="trusted" value="true" />
-      <method />
+    <configuration name="Unnamed" type="GlassfishConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="GlassFish 4.1.2" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/J_Ledger-1.0-SNAPSHOT/" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="J_Ledger:war">
+          <settings />
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="DOMAIN" value="domain1" />
+        <option name="PRESERVE" value="false" />
+        <option name="COMPATIBILITY" value="false" />
+        <option name="VIRTUAL_SERVER" />
+        <option name="USERNAME" value="admin" />
+        <option name="PASSWORD" value="" />
+      </server-settings>
+      <predefined_log_file id="GlassFish" enabled="true" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="9009" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method>
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="J_Ledger:war" />
+        </option>
+      </method>
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" />
@@ -363,14 +767,64 @@
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
         <value defaultName="singleModule" />
       </option>
-      <envs />
       <patterns />
-      <method />
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <module name="" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
     </configuration>
     <configuration default="true" type="JUnitTestDiscovery" factoryName="JUnit Test Discovery" changeList="All">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -391,97 +845,6 @@
       </option>
       <envs />
       <patterns />
-      <method />
-    </configuration>
-    <configuration default="true" type="JarApplication" factoryName="JAR Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="Java Scratch" factoryName="Java Scratch">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="SCRATCH_FILE_ID" value="0" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
-      <method />
-    </configuration>
-    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="J_Ledger" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="Remote" factoryName="Remote">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" value="javadebug" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
-      <method />
-    </configuration>
-    <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="TestNG" factoryName="TestNG">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
       <method />
     </configuration>
     <configuration default="true" type="TestNGTestDiscovery" factoryName="TestNG Test Discovery" changeList="All">
@@ -513,32 +876,23 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
       <node-options />
       <gulpfile />
       <tasks />
       <arguments />
       <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
-      <command value="run-script" />
-      <scripts />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="osgi.bnd.run" factoryName="Run Launcher">
-      <method />
-    </configuration>
-    <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
-      <method />
     </configuration>
   </component>
-  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="498b3d9b-612e-4fe3-ab5d-ce18a0ac4f54" name="Default" comment="" />
       <created>1455316743904</created>
       <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
       <updated>1455316743904</updated>
       <workItem from="1455316746547" duration="96000" />
       <workItem from="1455903241174" duration="100000" />
@@ -546,45 +900,88 @@
       <workItem from="1455907364330" duration="820000" />
       <workItem from="1457122379396" duration="356000" />
       <workItem from="1460059056269" duration="665000" />
+      <workItem from="1508327505436" duration="1871000" />
+      <workItem from="1508333538734" duration="2119000" />
+      <workItem from="1508338397796" duration="4829000" />
+      <workItem from="1508571918627" duration="516000" />
+      <workItem from="1508572570606" duration="2837000" />
+      <workItem from="1508662160643" duration="1275000" />
+      <workItem from="1508685506183" duration="603000" />
+      <workItem from="1508770766328" duration="8322000" />
+      <workItem from="1508861485612" duration="595000" />
+      <workItem from="1508863242779" duration="9190000" />
+      <workItem from="1509528107390" duration="5137000" />
+      <workItem from="1510089248573" duration="487000" />
+      <workItem from="1510294191299" duration="203000" />
+      <workItem from="1510310719505" duration="210000" />
+      <workItem from="1510598496989" duration="596000" />
+      <workItem from="1510599179986" duration="570000" />
+      <workItem from="1526357199585" duration="7313000" />
+      <workItem from="1526665145361" duration="79000" />
+      <workItem from="1526665357551" duration="240000" />
+      <workItem from="1526793439355" duration="329000" />
+      <workItem from="1526991588174" duration="596000" />
+      <workItem from="1527003680882" duration="539000" />
+      <workItem from="1528009106534" duration="598000" />
+      <workItem from="1528621122524" duration="576000" />
+      <workItem from="1528710718758" duration="537000" />
+      <workItem from="1528835555465" duration="594000" />
+      <workItem from="1528970247769" duration="590000" />
+      <workItem from="1529016734612" duration="491000" />
+      <workItem from="1529490478819" duration="504000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2226000" />
+    <option name="totallyTimeSpent" value="54572000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="20" y="43" width="1400" height="833" extended-state="0" />
-    <editor active="false" />
+    <frame x="107" y="284" width="1400" height="833" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="DB Execution Console" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50142854" side_tool="true" weight="0.32806325" />
+      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32938075" />
+      <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="right" id="REPL" order="4" side_tool="true" />
+      <window_info anchor="right" id="CDI" order="4" />
+      <window_info anchor="right" id="Leiningen" order="4" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Designer" order="2" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="JSF" order="4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info id="DB Browser" order="2" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="bottom" id="Java Enterprise" order="7" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49857143" weight="0.32806325" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info id="Persistence" order="2" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info anchor="right" id="Bean Validation" order="4" />
+      <window_info id="Web" order="2" side_tool="true" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.49928573" weight="0.32806325" />
+      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.3298292" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="bottom" id="Message" order="0" />
     </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -597,387 +994,307 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager />
-    <watches-manager />
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/beans/supbalBean.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/beans/rangeBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="28" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#5547#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-            <element signature="e#2052#2053#0" expanded="false" />
-            <element signature="e#2080#2081#0" expanded="false" />
-            <element signature="e#2195#2196#0" expanded="false" />
-            <element signature="e#2229#2230#0" expanded="false" />
-            <element signature="e#2310#2311#0" expanded="false" />
-            <element signature="e#2339#2340#0" expanded="false" />
-            <element signature="e#2444#2445#0" expanded="false" />
-            <element signature="e#2480#2481#0" expanded="false" />
-            <element signature="e#2575#2576#0" expanded="false" />
-            <element signature="e#2608#2609#0" expanded="false" />
-            <element signature="e#2735#2736#0" expanded="false" />
-            <element signature="e#2779#2780#0" expanded="false" />
-            <element signature="e#2867#2868#0" expanded="false" />
-            <element signature="e#2898#2899#0" expanded="false" />
-            <element signature="e#3014#3015#0" expanded="false" />
-            <element signature="e#3054#3055#0" expanded="false" />
-            <element signature="e#3374#3375#0" expanded="false" />
-            <element signature="e#3418#3419#0" expanded="false" />
-            <element signature="e#3516#3517#0" expanded="false" />
-            <element signature="e#3552#3553#0" expanded="false" />
-            <element signature="e#3688#3689#0" expanded="false" />
-            <element signature="e#3738#3739#0" expanded="false" />
-            <element signature="e#4412#4413#0" expanded="false" />
-            <element signature="e#4449#4450#0" expanded="false" />
-            <element signature="e#4580#4581#0" expanded="false" />
-            <element signature="e#4632#4633#0" expanded="false" />
-            <element signature="e#4667#4668#0" expanded="false" />
-            <element signature="e#4698#4699#0" expanded="false" />
-            <element signature="e#4746#4747#0" expanded="false" />
-            <element signature="e#4786#4787#0" expanded="false" />
-            <element signature="e#4821#4822#0" expanded="false" />
-            <element signature="e#4854#4855#0" expanded="false" />
-            <element signature="e#4898#4899#0" expanded="false" />
-            <element signature="e#4930#4931#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="7695">
+          <caret line="513" selection-start-line="513" selection-end-line="513" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/LogFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2595">
+          <caret line="173" column="24" selection-start-line="173" selection-start-column="24" selection-end-line="173" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="33" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/dyna/rangeTab.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3210">
+          <caret line="214" selection-start-line="214" selection-end-line="214" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1035">
+          <caret line="69" selection-start-line="69" selection-end-line="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/LogFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/beans/rangeBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7695">
+          <caret line="513" selection-start-line="513" selection-end-line="513" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2595">
+          <caret line="173" column="24" selection-start-line="173" selection-start-column="24" selection-end-line="173" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="33" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/dyna/rangeTab.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3210">
+          <caret line="214" selection-start-line="214" selection-end-line="214" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1035">
+          <caret line="69" selection-start-line="69" selection-end-line="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/LogFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/beans/rangeBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7695">
+          <caret line="513" selection-start-line="513" selection-end-line="513" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2595">
+          <caret line="173" column="24" selection-start-line="173" selection-start-column="24" selection-end-line="173" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="33" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/dyna/rangeTab.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3210">
+          <caret line="214" lean-forward="true" selection-start-line="214" selection-end-line="214" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1035">
+          <caret line="69" selection-start-line="69" selection-end-line="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/LogFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/beans/rangeBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7695">
+          <caret line="513" selection-start-line="513" selection-end-line="513" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1005">
+          <caret line="67" column="45" selection-start-line="67" selection-start-column="45" selection-end-line="67" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="20" lean-forward="true" selection-start-line="20" selection-start-column="4" selection-end-line="28" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/index.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state relative-caret-position="225">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/dyna/rangeTab.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2730">
+          <caret line="182" column="55" selection-start-line="182" selection-start-column="52" selection-end-line="182" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/beans/supbalBean.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
           <caret line="14" column="66" selection-start-line="14" selection-start-column="66" selection-end-line="14" selection-end-column="66" />
-          <folding>
-            <marker date="1458592289000" expanded="true" signature="204:1637" placeholder="..." />
-            <marker date="1458592289000" expanded="true" signature="462:722" placeholder="..." />
-            <marker date="1458592289000" expanded="true" signature="520:699" placeholder="..." />
-            <marker date="1458592289000" expanded="true" signature="1455:1483" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/beans/dynaForm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="106" column="30" selection-start-line="106" selection-start-column="30" selection-end-line="106" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#5447#0" expanded="false" />
-            <marker date="1458593113000" expanded="true" signature="4958:5436" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/beans/supbalBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="28" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#5547#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-            <element signature="e#2052#2053#0" expanded="false" />
-            <element signature="e#2080#2081#0" expanded="false" />
-            <element signature="e#2195#2196#0" expanded="false" />
-            <element signature="e#2229#2230#0" expanded="false" />
-            <element signature="e#2310#2311#0" expanded="false" />
-            <element signature="e#2339#2340#0" expanded="false" />
-            <element signature="e#2444#2445#0" expanded="false" />
-            <element signature="e#2480#2481#0" expanded="false" />
-            <element signature="e#2575#2576#0" expanded="false" />
-            <element signature="e#2608#2609#0" expanded="false" />
-            <element signature="e#2735#2736#0" expanded="false" />
-            <element signature="e#2779#2780#0" expanded="false" />
-            <element signature="e#2867#2868#0" expanded="false" />
-            <element signature="e#2898#2899#0" expanded="false" />
-            <element signature="e#3014#3015#0" expanded="false" />
-            <element signature="e#3054#3055#0" expanded="false" />
-            <element signature="e#3374#3375#0" expanded="false" />
-            <element signature="e#3418#3419#0" expanded="false" />
-            <element signature="e#3516#3517#0" expanded="false" />
-            <element signature="e#3552#3553#0" expanded="false" />
-            <element signature="e#3688#3689#0" expanded="false" />
-            <element signature="e#3738#3739#0" expanded="false" />
-            <element signature="e#4412#4413#0" expanded="false" />
-            <element signature="e#4449#4450#0" expanded="false" />
-            <element signature="e#4580#4581#0" expanded="false" />
-            <element signature="e#4632#4633#0" expanded="false" />
-            <element signature="e#4667#4668#0" expanded="false" />
-            <element signature="e#4698#4699#0" expanded="false" />
-            <element signature="e#4746#4747#0" expanded="false" />
-            <element signature="e#4786#4787#0" expanded="false" />
-            <element signature="e#4821#4822#0" expanded="false" />
-            <element signature="e#4854#4855#0" expanded="false" />
-            <element signature="e#4898#4899#0" expanded="false" />
-            <element signature="e#4930#4931#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/beans/dynaForm.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/beans/supbalBean.java" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/index.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state>
           <caret line="14" column="66" selection-start-line="14" selection-start-column="66" selection-end-line="14" selection-end-column="66" />
-          <folding>
-            <marker date="1458592289000" expanded="true" signature="204:1637" placeholder="..." />
-            <marker date="1458592289000" expanded="true" signature="462:722" placeholder="..." />
-            <marker date="1458592289000" expanded="true" signature="520:699" placeholder="..." />
-            <marker date="1458592289000" expanded="true" signature="1455:1483" placeholder="..." />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/beans/dynaForm.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/beans/supbalBean.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/beans/supbalBean.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/beans/supbalBean.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/beans/supbalBean.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/beans/dynaForm.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/coreobjects/balanceType.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/coreobjects/flexSegmentFacade.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6795">
+          <caret line="475" column="41" selection-start-line="475" selection-start-column="37" selection-end-line="475" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/coreobjects/tableDrill.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/coreobjects/tableOut.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/coreobjects/segRange.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1035">
+          <caret line="69" selection-start-line="69" selection-end-line="69" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="45">
+          <caret line="3" column="33" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/beans/dynaForm.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/glassfish-resources.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="85" column="30" selection-start-line="85" selection-start-column="30" selection-end-line="85" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#5447#0" expanded="false" />
-            <marker date="1458593113000" expanded="true" signature="4958:5436" placeholder="{...}" />
-          </folding>
+        <state relative-caret-position="266">
+          <caret line="60" column="78" selection-start-line="60" selection-start-column="78" selection-end-line="60" selection-end-column="78" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/beans/supbalBean.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/java/util/function/Predicate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="28" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#5547#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-            <element signature="e#2052#2053#0" expanded="false" />
-            <element signature="e#2080#2081#0" expanded="false" />
-            <element signature="e#2195#2196#0" expanded="false" />
-            <element signature="e#2229#2230#0" expanded="false" />
-            <element signature="e#2310#2311#0" expanded="false" />
-            <element signature="e#2339#2340#0" expanded="false" />
-            <element signature="e#2444#2445#0" expanded="false" />
-            <element signature="e#2480#2481#0" expanded="false" />
-            <element signature="e#2575#2576#0" expanded="false" />
-            <element signature="e#2608#2609#0" expanded="false" />
-            <element signature="e#2735#2736#0" expanded="false" />
-            <element signature="e#2779#2780#0" expanded="false" />
-            <element signature="e#2867#2868#0" expanded="false" />
-            <element signature="e#2898#2899#0" expanded="false" />
-            <element signature="e#3014#3015#0" expanded="false" />
-            <element signature="e#3054#3055#0" expanded="false" />
-            <element signature="e#3374#3375#0" expanded="false" />
-            <element signature="e#3418#3419#0" expanded="false" />
-            <element signature="e#3516#3517#0" expanded="false" />
-            <element signature="e#3552#3553#0" expanded="false" />
-            <element signature="e#3688#3689#0" expanded="false" />
-            <element signature="e#3738#3739#0" expanded="false" />
-            <element signature="e#4412#4413#0" expanded="false" />
-            <element signature="e#4449#4450#0" expanded="false" />
-            <element signature="e#4580#4581#0" expanded="false" />
-            <element signature="e#4632#4633#0" expanded="false" />
-            <element signature="e#4667#4668#0" expanded="false" />
-            <element signature="e#4698#4699#0" expanded="false" />
-            <element signature="e#4746#4747#0" expanded="false" />
-            <element signature="e#4786#4787#0" expanded="false" />
-            <element signature="e#4821#4822#0" expanded="false" />
-            <element signature="e#4854#4855#0" expanded="false" />
-            <element signature="e#4898#4899#0" expanded="false" />
-            <element signature="e#4930#4931#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="160">
+          <caret line="48" column="12" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/index.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1458592289000" expanded="true" signature="204:1637" placeholder="..." />
-            <marker date="1458592289000" expanded="true" signature="462:722" placeholder="..." />
-            <marker date="1458592289000" expanded="true" signature="520:699" placeholder="..." />
-            <marker date="1458592289000" expanded="true" signature="1455:1483" placeholder="..." />
-          </folding>
+        <state relative-caret-position="225">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/beans/supbalBean.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/LogFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#5547#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-            <element signature="e#2052#2053#0" expanded="false" />
-            <element signature="e#2080#2081#0" expanded="false" />
-            <element signature="e#2195#2196#0" expanded="false" />
-            <element signature="e#2229#2230#0" expanded="false" />
-            <element signature="e#2310#2311#0" expanded="false" />
-            <element signature="e#2339#2340#0" expanded="false" />
-            <element signature="e#2444#2445#0" expanded="false" />
-            <element signature="e#2480#2481#0" expanded="false" />
-            <element signature="e#2575#2576#0" expanded="false" />
-            <element signature="e#2608#2609#0" expanded="false" />
-            <element signature="e#2735#2736#0" expanded="false" />
-            <element signature="e#2779#2780#0" expanded="false" />
-            <element signature="e#2867#2868#0" expanded="false" />
-            <element signature="e#2898#2899#0" expanded="false" />
-            <element signature="e#3014#3015#0" expanded="false" />
-            <element signature="e#3054#3055#0" expanded="false" />
-            <element signature="e#3374#3375#0" expanded="false" />
-            <element signature="e#3418#3419#0" expanded="false" />
-            <element signature="e#3516#3517#0" expanded="false" />
-            <element signature="e#3552#3553#0" expanded="false" />
-            <element signature="e#3688#3689#0" expanded="false" />
-            <element signature="e#3738#3739#0" expanded="false" />
-            <element signature="e#4412#4413#0" expanded="false" />
-            <element signature="e#4449#4450#0" expanded="false" />
-            <element signature="e#4580#4581#0" expanded="false" />
-            <element signature="e#4632#4633#0" expanded="false" />
-            <element signature="e#4667#4668#0" expanded="false" />
-            <element signature="e#4698#4699#0" expanded="false" />
-            <element signature="e#4746#4747#0" expanded="false" />
-            <element signature="e#4786#4787#0" expanded="false" />
-            <element signature="e#4821#4822#0" expanded="false" />
-            <element signature="e#4854#4855#0" expanded="false" />
-            <element signature="e#4898#4899#0" expanded="false" />
-            <element signature="e#4930#4931#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="525">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/beans/supbalBean.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/dyna/rangeTab.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#5547#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-            <element signature="e#2052#2053#0" expanded="false" />
-            <element signature="e#2080#2081#0" expanded="false" />
-            <element signature="e#2195#2196#0" expanded="false" />
-            <element signature="e#2229#2230#0" expanded="false" />
-            <element signature="e#2310#2311#0" expanded="false" />
-            <element signature="e#2339#2340#0" expanded="false" />
-            <element signature="e#2444#2445#0" expanded="false" />
-            <element signature="e#2480#2481#0" expanded="false" />
-            <element signature="e#2575#2576#0" expanded="false" />
-            <element signature="e#2608#2609#0" expanded="false" />
-            <element signature="e#2735#2736#0" expanded="false" />
-            <element signature="e#2779#2780#0" expanded="false" />
-            <element signature="e#2867#2868#0" expanded="false" />
-            <element signature="e#2898#2899#0" expanded="false" />
-            <element signature="e#3014#3015#0" expanded="false" />
-            <element signature="e#3054#3055#0" expanded="false" />
-            <element signature="e#3374#3375#0" expanded="false" />
-            <element signature="e#3418#3419#0" expanded="false" />
-            <element signature="e#3516#3517#0" expanded="false" />
-            <element signature="e#3552#3553#0" expanded="false" />
-            <element signature="e#3688#3689#0" expanded="false" />
-            <element signature="e#3738#3739#0" expanded="false" />
-            <element signature="e#4412#4413#0" expanded="false" />
-            <element signature="e#4449#4450#0" expanded="false" />
-            <element signature="e#4580#4581#0" expanded="false" />
-            <element signature="e#4632#4633#0" expanded="false" />
-            <element signature="e#4667#4668#0" expanded="false" />
-            <element signature="e#4698#4699#0" expanded="false" />
-            <element signature="e#4746#4747#0" expanded="false" />
-            <element signature="e#4786#4787#0" expanded="false" />
-            <element signature="e#4821#4822#0" expanded="false" />
-            <element signature="e#4854#4855#0" expanded="false" />
-            <element signature="e#4898#4899#0" expanded="false" />
-            <element signature="e#4930#4931#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="3210">
+          <caret line="214" selection-start-line="214" selection-end-line="214" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/beans/supbalBean.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/beans/rangeBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="28" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#5547#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-            <element signature="e#2052#2053#0" expanded="false" />
-            <element signature="e#2080#2081#0" expanded="false" />
-            <element signature="e#2195#2196#0" expanded="false" />
-            <element signature="e#2229#2230#0" expanded="false" />
-            <element signature="e#2310#2311#0" expanded="false" />
-            <element signature="e#2339#2340#0" expanded="false" />
-            <element signature="e#2444#2445#0" expanded="false" />
-            <element signature="e#2480#2481#0" expanded="false" />
-            <element signature="e#2575#2576#0" expanded="false" />
-            <element signature="e#2608#2609#0" expanded="false" />
-            <element signature="e#2735#2736#0" expanded="false" />
-            <element signature="e#2779#2780#0" expanded="false" />
-            <element signature="e#2867#2868#0" expanded="false" />
-            <element signature="e#2898#2899#0" expanded="false" />
-            <element signature="e#3014#3015#0" expanded="false" />
-            <element signature="e#3054#3055#0" expanded="false" />
-            <element signature="e#3374#3375#0" expanded="false" />
-            <element signature="e#3418#3419#0" expanded="false" />
-            <element signature="e#3516#3517#0" expanded="false" />
-            <element signature="e#3552#3553#0" expanded="false" />
-            <element signature="e#3688#3689#0" expanded="false" />
-            <element signature="e#3738#3739#0" expanded="false" />
-            <element signature="e#4412#4413#0" expanded="false" />
-            <element signature="e#4449#4450#0" expanded="false" />
-            <element signature="e#4580#4581#0" expanded="false" />
-            <element signature="e#4632#4633#0" expanded="false" />
-            <element signature="e#4667#4668#0" expanded="false" />
-            <element signature="e#4698#4699#0" expanded="false" />
-            <element signature="e#4746#4747#0" expanded="false" />
-            <element signature="e#4786#4787#0" expanded="false" />
-            <element signature="e#4821#4822#0" expanded="false" />
-            <element signature="e#4854#4855#0" expanded="false" />
-            <element signature="e#4898#4899#0" expanded="false" />
-            <element signature="e#4930#4931#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="6795">
+          <caret line="513" selection-start-line="513" selection-end-line="513" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/beans/dynaForm.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="107" column="30" selection-start-line="107" selection-start-column="30" selection-end-line="107" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#5447#0" expanded="false" />
-            <marker date="1458593113000" expanded="true" signature="4958:5436" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
-          <folding>
-            <marker date="1458592289000" expanded="true" signature="204:1637" placeholder="..." />
-            <marker date="1458592289000" expanded="true" signature="462:722" placeholder="..." />
-            <marker date="1458592289000" expanded="true" signature="520:699" placeholder="..." />
-            <marker date="1458592289000" expanded="true" signature="1455:1483" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.06320225">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="679">
+          <caret line="52" column="44" selection-start-line="52" selection-start-column="44" selection-end-line="52" selection-end-column="44" />
         </state>
       </provider>
     </entry>
@@ -1004,7 +1321,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.492569" />
               </list>
             </option>
           </splitter-proportions>
@@ -1015,7 +1332,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.492569" />
               </list>
             </option>
           </splitter-proportions>
@@ -1039,7 +1356,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.492569" />
               </list>
             </option>
           </splitter-proportions>
@@ -1059,11 +1376,11 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Maven: com.google.code.gson:gson:2.2.4</last-edited>
+          <last-edited>ojdbc7</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.492569" />
               </list>
             </option>
           </splitter-proportions>

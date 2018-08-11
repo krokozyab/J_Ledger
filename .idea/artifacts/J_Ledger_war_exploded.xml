@@ -7,7 +7,6 @@
           <element id="module-output" name="J_Ledger" />
         </element>
         <element id="directory" name="lib">
-          <element id="library" level="project" name="Maven: org.primefaces.themes:all-themes:1.0.10" />
           <element id="library" level="project" name="Maven: org.eclipse.persistence:eclipselink:2.5.2" />
           <element id="library" level="project" name="Maven: org.eclipse.persistence:javax.persistence:2.1.0" />
           <element id="library" level="project" name="Maven: org.eclipse.persistence:commonj.sdo:2.1.1" />
@@ -28,31 +27,38 @@
           <element id="library" level="project" name="Maven: org.apache.openjpa:openjpa-persistence:2.4.0" />
           <element id="library" level="project" name="Maven: org.apache.openjpa:openjpa-persistence-jdbc:2.4.0" />
           <element id="library" level="project" name="Maven: org.apache.openjpa:openjpa-jdbc:2.4.0" />
-          <element id="library" level="project" name="Maven: org.apache.poi:poi:3.13" />
-          <element id="library" level="project" name="Maven: commons-codec:commons-codec:1.9" />
-          <element id="library" level="project" name="Maven: org.apache.poi:poi-excelant:3.13" />
-          <element id="library" level="project" name="Maven: org.apache.poi:poi-ooxml:3.13" />
-          <element id="library" level="project" name="Maven: org.apache.poi:poi-ooxml-schemas:3.13" />
-          <element id="library" level="project" name="Maven: org.apache.xmlbeans:xmlbeans:2.6.0" />
-          <element id="library" level="project" name="Maven: stax:stax-api:1.0.1" />
+          <element id="library" level="project" name="Maven: org.apache.poi:poi:3.14" />
+          <element id="library" level="project" name="Maven: commons-codec:commons-codec:1.10" />
+          <element id="library" level="project" name="Maven: org.apache.poi:poi-excelant:3.14" />
           <element id="library" level="project" name="Maven: org.apache.ant:ant:1.8.2" />
           <element id="library" level="project" name="Maven: org.apache.ant:ant-launcher:1.8.2" />
-          <element id="library" level="project" name="Maven: org.primefaces:primefaces:5.3" />
-          <element id="library" level="project" name="Maven: org.primefaces.extensions:primefaces-extensions:4.0.0" />
+          <element id="library" level="project" name="Maven: org.apache.poi:poi-ooxml:3.14" />
+          <element id="library" level="project" name="Maven: com.github.virtuald:curvesapi:1.03" />
+          <element id="library" level="project" name="Maven: org.apache.poi:poi-ooxml-schemas:3.14" />
+          <element id="library" level="project" name="Maven: org.apache.xmlbeans:xmlbeans:2.6.0" />
+          <element id="library" level="project" name="Maven: stax:stax-api:1.0.1" />
+          <element id="library" level="project" name="Maven: org.primefaces.extensions:primefaces-extensions:6.0.0" />
+          <element id="library" level="project" name="Maven: org.primefaces:primefaces:6.0" />
           <element id="library" level="project" name="Maven: com.google.code.gson:gson:2.2.4" />
           <element id="library" level="project" name="Maven: org.apache.commons:commons-lang3:3.1" />
-          <element id="library" level="project" name="Maven: com.twelvemonkeys.common:common-lang:3.2.1" />
           <element id="library" level="project" name="Maven: org.grlea.log:simple-log:1.7" />
-          <element id="library" level="project" name="Maven: org.slf4j:slf4j-site:1.7.12" />
-          <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.12" />
           <element id="library" level="project" name="Maven: commons-beanutils:commons-beanutils:20030211.134440" />
-          <element id="library" level="project" name="Maven: com.netflix.rxjava:rxjava-core:0.20.7" />
+          <element id="library" level="project" name="Maven: com.avsystem.commons:commons-annotations_2.11:1.14.0" />
+          <element id="library" level="project" name="Maven: org.scala-lang:scala-library:2.11.8" />
+          <element id="library" level="project" name="Maven: com.github.ghik:silencer-lib:0.3" />
           <element id="library" level="project" name="Maven: javax:javaee-api:7.0" />
           <element id="library" level="project" name="Maven: com.sun.mail:javax.mail:1.5.0" />
           <element id="library" level="project" name="Maven: javax.activation:activation:1.1" />
           <element id="library" level="project" name="Maven: javax:javaee-web-api:7.0" />
           <element id="library" level="project" name="Maven: com.sun.faces:jsf-api:2.0.2" />
-          <element id="library" level="project" name="Maven: com.sun.faces:jsf-impl:2.0.2" />
+          <element id="library" level="project" name="Maven: commons-logging:commons-logging:1.2" />
+          <element id="library" level="project" name="Maven: org.jetbrains.kotlin:kotlin-stdlib-jre8:1.2.41" />
+          <element id="library" level="project" name="Maven: org.jetbrains.kotlin:kotlin-stdlib:1.2.41" />
+          <element id="library" level="project" name="Maven: org.jetbrains:annotations:13.0" />
+          <element id="library" level="project" name="Maven: org.jetbrains.kotlin:kotlin-stdlib-jre7:1.2.41" />
+          <element id="library" level="project" name="Maven: org.glassfish:javax.faces:2.2.8" />
+          <element id="library" level="project" name="Maven: log4j:log4j:1.2.12" />
+          <element id="library" level="project" name="Maven: org.jboss.weld.servlet:weld-servlet:2.3.4.Final" />
         </element>
       </element>
       <element id="directory" name="META-INF">
